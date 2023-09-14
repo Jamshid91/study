@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/plugins/video.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-end justify-content-md-center">
+                    <ul class="header-item d-none d-md-flex">
+                        <li><a href="./index.html" class="header-item__link active">главная</a></li>
+                        <li><a href="./Informatics.html" class="header-item__link">информатика</a></li>
+                        <li><a href="./mathematics.html" class="header-item__link">математика</a></li>
+                        <li><a href="./for-parents.html" class="header-item__link">для родителей</a></li>
+                        <li><a href="./contact.html" class="header-item__link">контакты</a></li>
+                        <li><a href="./price.html" class="header-item__link">купить</a></li>
+                    </ul>
+                    <div class="burger d-md-none">
+                        <svg width="41" height="12" viewBox="0 0 41 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="41" height="2" rx="1" fill="black"/>
+                            <rect x="8" y="5" width="33" height="2" rx="1" fill="black"/>
+                            <rect y="10" width="41" height="2" rx="1" fill="black"/>
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 13L7.00002 7.00002M7.00002 7.00002L13 1M7.00002 7.00002L1 1M7.00002 7.00002L13 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu">
+        <ul class="menu-item">
+            <li><a href="./index.html" class="menu-item__link active">главная</a></li>
+            <li><a href="./Informatics.html" class="menu-item__link">информатика</a></li>
+            <li><a href="./mathematics.html" class="menu-item__link">математика</a></li>
+            <li><a href="./for-parents.html" class="menu-item__link">для родителей</a></li>
+            <li><a href="./contact.html" class="menu-item__link">контакты</a></li>
+            <li><a href="./price.html" class="menu-item__link">купить</a></li>            
+        </ul>
+    </div>
+
+    <div class="first maxWidth position-relative">
+        <img src="assets/img/png/first.png" alt="" class="d-none d-md-block">
+        <img src="assets/img/png/first-mob.png" alt="" class="d-md-none">
+        <div class="first-box position-absolute d-flex align-items-center justify-content-center flex-column text-center">
+            <img src="assets/img/png/logo.png" alt="" class="logo">
+            <h1 class="title__text">Больше чем просто <br> подготовка к ЕГЭ</h1>
+            <button class="first-box__btn">почему?</button>
+        </div>
+    </div>
+
+    <div class="banner-text">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-11">
+                    <h2 class="title__text text-end">Никаких шаблонов — мы</h2>
+                    <h2 class="title__text"> используем <span>физические</span> макеты, чтобы на <span>пальцах</span> объяснить материал.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="aside">
+        <div class="free-lesson">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="title__text-sub text-start text-md-center">Бесплатный пробный урок - это <span>легкий</span> способ получить информацию о курсе</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="free-lesson-head">
+                            <div class="input-box" data-radio="lesson_1">
+                                <input type="radio" class="lesson-inp" id="lesson1" name="lesson" checked>
+                                <label for="lesson1" class="lesson-lab activeLesson"> информатика</label>
+                            </div>
+                            <div class="input-box" data-radio="lesson_2">
+                                <input type="radio" class="lesson-inp" id="lesson2" name="lesson">
+                                <label for="lesson2" class="lesson-lab activeLesson">математика</label>
+                            </div>
+                        </div>
+                        <div class="free-lesson-body">
+                            <div class="lesson-video lesson_1">
+                                <video
+                                    id="my-video"
+                                    class="video-js"
+                                    controls
+                                    preload="auto"
+                                    poster="assets/img/png/informatika.jpg"
+                                    data-setup="{}"
+                                >
+                                <source src="assets/video/video.mp4" type="video/mp4" />
+                              </video>
+                            </div>
+                            <div class="lesson-video lesson_2">
+                                <video
+                                    id="my-video"
+                                    class="video-js"
+                                    controls
+                                    preload="auto"
+                                    poster="assets/img/png/matematika.jpg"
+                                    data-setup="{}"
+                                >
+                                <source src="assets/video/video.mp4" type="video/mp4" />
+                              </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title__text-sub text-end">Dr. Study обеспечивает всеми необходимыми <span>ресурсами</span> и <span>поддержкой</span> для успешной подготовки к экзаменам</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="education-item d-flex align-items-start flex-column flex-md-row">
+                            <div class="education-info">
+                                <div class="education-box education_1">
+                                    <h4 class="education-box__title">/01 Понимание предмета</h4>
+                                    <div class="d-flex justify-content-center">
+                                        <img src="assets/img/png/e1.png" alt="" class="education-box__img">
+                                    </div>
+                                    <p class="education-box__text">Один из наших главных принципов нашего подхода в том, что мы не учим просто зазубривать материал, алгоритмы решения задач, программы и так далее. Мы вкладываем в учеников понимание предмета как такового. </p>
+                                </div>
+                                <div class="education-box education_2">
+                                    <h4 class="education-box__title">/02 Наглядность полученных знаний</h4>
+                                    <div class="d-flex justify-content-center">
+                                        <img src="assets/img/png/e2.png" alt="" class="education-box__img">
+                                    </div>
+                                    <p class="education-box__text">               Один из принципов нашего подхода в том, что мы всегда объясняем ученикам зачем всё это нужно, а также используем физические макеты, чтобы показать как это используется на практике.</p>
+                                </div>
+                                <div class="education-box education_3">
+                                    <h4 class="education-box__title">/03 Неформальная обстановка</h4>
+                                    <div class="d-flex justify-content-center">
+                                        <img src="assets/img/png/e3.png" alt="" class="education-box__img">
+                                    </div>
+                                    <p class="education-box__text">               Каждый из наших преподавателей всего на 2-3 года старше учеников. От этого общения на уроке становится намного легче, пропадают различные неудобства и всё сконцентрировано на главном - на процессе обучения.</p>
+                                </div>
+                                <div class="education-box education_4">
+                                    <h4 class="education-box__title">/04 Разделение по уровню</h4>
+                                    <div class="d-flex justify-content-center">
+                                        <img src="assets/img/png/e4.png" alt="" class="education-box__img abc">
+                                    </div>
+                                    <p class="education-box__text">               У нас предусмотрено 3 типа групп: A, B и C. Цель у всех одна - хорошо сдать ЕГЭ, но каждый начинает свой путь к этой цели с разных исходных знаний. Разделение по уровню происходит с помощью вступительного теста, а также учитывая дальнейшие цели ученика.</p>
+                                </div>
+                                <div class="education-box education_5">
+                                    <h4 class="education-box__title">/05 Продвинутая система контроля знаний</h4>
+                                    <div class="d-flex justify-content-center">
+                                        <img src="assets/img/png/e5.png" alt="" class="education-box__img">
+                                    </div>
+                                    <p class="education-box__text">               Мы очень ответственно относимся к оцениванию наших учеников. У нас есть 3 основных элемента контроля: домашние задания в виде тестов и вопросов с развернутым ответом, ежемесячные аттестации, коллоквиумы.</p>
+                                </div>
+                            </div>
+                            <div class="education-btns d-flex  flex-column flex-md-row">
+                                <div class="education-btn d-none" data-radio="education_1">
+                                    /01 Понимание предмета
+                                </div>
+                                <div class="education-btn" data-radio="education_2">
+                                    /02 Наглядность полученных знаний
+                                </div>
+                                <div class="education-btn" data-radio="education_3">
+                                    /03 Неформальная обстановка
+                                </div>
+                                <div class="education-btn" data-radio="education_4">
+                                    /04 Разделение по уровню
+                                </div>
+                                <div class="education-btn" data-radio="education_5">
+                                    /05 Продвинутая система контроля 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="faq__title">Часто задаваемые вопросы</h3>
+                        <div class="faq-item">
+                            <div class="faq-head">Часто задаваемый вопрос</div>
+                            <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-head">Часто задаваемый вопрос</div>
+                            <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-head">Часто задаваемый вопрос</div>
+                            <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-head">Часто задаваемый вопрос</div>
+                            <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-head">Часто задаваемый вопрос</div>
+                            <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
+                        </div>
+                        <a href="#" class="faq__link">
+                            <span>Оставить заявку</span>
+                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.67761 38.0331L38.033 2.67783M38.033 2.67783L2.67764 2.67783M38.033 2.67783L38.033 38.0332" stroke="white" stroke-width="5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo">
+                        <img src="assets/img/png/logo-white.png" alt="">
+                    </a>
+                    <p class="footer__text">2023, Dr. Study</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/plugin/jquery.js"></script>
+    <script src="assets/js/plugin/video.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
