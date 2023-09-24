@@ -12,239 +12,496 @@
 </head>
 <body>
 
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-end justify-content-md-center">
-                    <ul class="header-item d-none d-md-flex">
-                        <li><a href="./index.html" class="header-item__link active">главная</a></li>
-                        <li><a href="./Informatics.html" class="header-item__link">информатика</a></li>
-                        <li><a href="./mathematics.html" class="header-item__link">математика</a></li>
-                        <li><a href="./for-parents.html" class="header-item__link">для родителей</a></li>
-                        <li><a href="./contact.html" class="header-item__link">контакты</a></li>
-                        <li><a href="./price.html" class="header-item__link">купить</a></li>
-                    </ul>
-                    <div class="burger d-md-none">
-                        <svg width="41" height="12" viewBox="0 0 41 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="41" height="2" rx="1" fill="black"/>
-                            <rect x="8" y="5" width="33" height="2" rx="1" fill="black"/>
-                            <rect y="10" width="41" height="2" rx="1" fill="black"/>
-                        </svg>
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 13L7.00002 7.00002M7.00002 7.00002L13 1M7.00002 7.00002L1 1M7.00002 7.00002L13 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="menu">
-        <ul class="menu-item">
-            <li><a href="./index.html" class="menu-item__link active">главная</a></li>
-            <li><a href="./Informatics.html" class="menu-item__link">информатика</a></li>
-            <li><a href="./mathematics.html" class="menu-item__link">математика</a></li>
-            <li><a href="./for-parents.html" class="menu-item__link">для родителей</a></li>
-            <li><a href="./contact.html" class="menu-item__link">контакты</a></li>
-            <li><a href="./price.html" class="menu-item__link">купить</a></li>            
-        </ul>
-    </div>
-
-    <div class="first maxWidth position-relative">
-        <img src="assets/img/png/first.png" alt="" class="d-none d-md-block">
-        <img src="assets/img/png/first-mob.png" alt="" class="d-md-none">
-        <div class="first-box position-absolute d-flex align-items-center justify-content-center flex-column text-center">
-            <img src="assets/img/png/logo.png" alt="" class="logo">
-            <h1 class="title__text">Больше чем просто <br> подготовка к ЕГЭ</h1>
-            <button class="first-box__btn">почему?</button>
-        </div>
-    </div>
-
-    <div class="banner-text">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-11">
-                    <h2 class="title__text text-end">Никаких шаблонов — мы</h2>
-                    <h2 class="title__text"> используем <span>физические</span> макеты, чтобы на <span>пальцах</span> объяснить материал.</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <aside class="aside">
-        <div class="free-lesson">
+    <div class="page">
+        <header class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h3 class="title__text-sub text-start text-md-center">Бесплатный пробный урок - это <span>легкий</span> способ получить информацию о курсе</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="free-lesson-head">
-                            <div class="input-box" data-radio="lesson_1">
-                                <input type="radio" class="lesson-inp" id="lesson1" name="lesson" checked>
-                                <label for="lesson1" class="lesson-lab activeLesson"> информатика</label>
-                            </div>
-                            <div class="input-box" data-radio="lesson_2">
-                                <input type="radio" class="lesson-inp" id="lesson2" name="lesson">
-                                <label for="lesson2" class="lesson-lab activeLesson">математика</label>
-                            </div>
-                        </div>
-                        <div class="free-lesson-body">
-                            <div class="lesson-video lesson_1">
-                                <video
-                                    id="my-video"
-                                    class="video-js"
-                                    controls
-                                    preload="auto"
-                                    poster="assets/img/png/informatika.jpg"
-                                    data-setup="{}"
-                                >
-                                <source src="assets/video/video.mp4" type="video/mp4" />
-                              </video>
-                            </div>
-                            <div class="lesson-video lesson_2">
-                                <video
-                                    id="my-video"
-                                    class="video-js"
-                                    controls
-                                    preload="auto"
-                                    poster="assets/img/png/matematika.jpg"
-                                    data-setup="{}"
-                                >
-                                <source src="assets/video/video.mp4" type="video/mp4" />
-                              </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="education">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="title__text-sub text-end">Dr. Study обеспечивает всеми необходимыми <span>ресурсами</span> и <span>поддержкой</span> для успешной подготовки к экзаменам</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="education-item d-flex align-items-start flex-column flex-md-row">
-                            <div class="education-info">
-                                <div class="education-box education_1">
-                                    <h4 class="education-box__title">/01 Понимание предмета</h4>
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/png/e1.png" alt="" class="education-box__img">
-                                    </div>
-                                    <p class="education-box__text">Один из наших главных принципов нашего подхода в том, что мы не учим просто зазубривать материал, алгоритмы решения задач, программы и так далее. Мы вкладываем в учеников понимание предмета как такового. </p>
-                                </div>
-                                <div class="education-box education_2">
-                                    <h4 class="education-box__title">/02 Наглядность полученных знаний</h4>
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/png/e2.png" alt="" class="education-box__img">
-                                    </div>
-                                    <p class="education-box__text">               Один из принципов нашего подхода в том, что мы всегда объясняем ученикам зачем всё это нужно, а также используем физические макеты, чтобы показать как это используется на практике.</p>
-                                </div>
-                                <div class="education-box education_3">
-                                    <h4 class="education-box__title">/03 Неформальная обстановка</h4>
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/png/e3.png" alt="" class="education-box__img">
-                                    </div>
-                                    <p class="education-box__text">               Каждый из наших преподавателей всего на 2-3 года старше учеников. От этого общения на уроке становится намного легче, пропадают различные неудобства и всё сконцентрировано на главном - на процессе обучения.</p>
-                                </div>
-                                <div class="education-box education_4">
-                                    <h4 class="education-box__title">/04 Разделение по уровню</h4>
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/png/e4.png" alt="" class="education-box__img abc">
-                                    </div>
-                                    <p class="education-box__text">               У нас предусмотрено 3 типа групп: A, B и C. Цель у всех одна - хорошо сдать ЕГЭ, но каждый начинает свой путь к этой цели с разных исходных знаний. Разделение по уровню происходит с помощью вступительного теста, а также учитывая дальнейшие цели ученика.</p>
-                                </div>
-                                <div class="education-box education_5">
-                                    <h4 class="education-box__title">/05 Продвинутая система контроля знаний</h4>
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/png/e5.png" alt="" class="education-box__img">
-                                    </div>
-                                    <p class="education-box__text">               Мы очень ответственно относимся к оцениванию наших учеников. У нас есть 3 основных элемента контроля: домашние задания в виде тестов и вопросов с развернутым ответом, ежемесячные аттестации, коллоквиумы.</p>
-                                </div>
-                            </div>
-                            <div class="education-btns d-flex  flex-column flex-md-row">
-                                <div class="education-btn d-none" data-radio="education_1">
-                                    /01 Понимание предмета
-                                </div>
-                                <div class="education-btn" data-radio="education_2">
-                                    /02 Наглядность полученных знаний
-                                </div>
-                                <div class="education-btn" data-radio="education_3">
-                                    /03 Неформальная обстановка
-                                </div>
-                                <div class="education-btn" data-radio="education_4">
-                                    /04 Разделение по уровню
-                                </div>
-                                <div class="education-btn" data-radio="education_5">
-                                    /05 Продвинутая система контроля 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="faq">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="faq__title">Часто задаваемые вопросы</h3>
-                        <div class="faq-item">
-                            <div class="faq-head">Часто задаваемый вопрос</div>
-                            <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-head">Часто задаваемый вопрос</div>
-                            <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-head">Часто задаваемый вопрос</div>
-                            <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-head">Часто задаваемый вопрос</div>
-                            <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-head">Часто задаваемый вопрос</div>
-                            <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
-                        </div>
-                        <a href="#" class="faq__link">
-                            <span>Оставить заявку</span>
-                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.67761 38.0331L38.033 2.67783M38.033 2.67783L2.67764 2.67783M38.033 2.67783L38.033 38.0332" stroke="white" stroke-width="5"/>
+                    <div class="col-12 d-flex justify-content-end justify-content-md-center">
+                        <ul class="header-item d-none d-md-flex">
+                            <li><a href="./index.html" class="header-item__link active">главная</a></li>
+                            <li><a href="./Informatics.html" class="header-item__link">информатика</a></li>
+                            <li><a href="./mathematics.html" class="header-item__link">математика</a></li>
+                            <li><a href="./for-parents.html" class="header-item__link">для родителей</a></li>
+                            <li><a href="./contact.html" class="header-item__link">контакты</a></li>
+                            <li><a href="./price.html" class="header-item__link">купить</a></li>
+                        </ul>
+                        <div class="burger d-md-none">
+                            <svg width="41" height="12" viewBox="0 0 41 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="41" height="2" rx="1" fill="black"/>
+                                <rect x="8" y="5" width="33" height="2" rx="1" fill="black"/>
+                                <rect y="10" width="41" height="2" rx="1" fill="black"/>
                             </svg>
-                        </a>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7.00002 7.00002M7.00002 7.00002L13 1M7.00002 7.00002L1 1M7.00002 7.00002L13 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="menu">
+            <ul class="menu-item">
+                <li><a href="./index.html" class="menu-item__link active">главная</a></li>
+                <li><a href="./Informatics.html" class="menu-item__link">информатика</a></li>
+                <li><a href="./mathematics.html" class="menu-item__link">математика</a></li>
+                <li><a href="./for-parents.html" class="menu-item__link">для родителей</a></li>
+                <li><a href="./contact.html" class="menu-item__link">контакты</a></li>
+                <li><a href="./price.html" class="menu-item__link">купить</a></li>            
+            </ul>
+        </div>
+    
+        <div class="first maxWidth position-relative">
+            <img src="assets/img/png/first.png" alt="" class="d-none d-md-block">
+            <img src="assets/img/png/first-mob.png" alt="" class="d-md-none">
+            <div class="first-box position-absolute d-flex align-items-center justify-content-center flex-column text-center">
+                <img src="assets/img/png/logo.png" alt="" class="logo">
+                <h1 class="title__text">Больше чем просто <br> подготовка к ЕГЭ</h1>
+                <button class="first-box__btn">почему?</button>
+            </div>
+        </div>
+    
+        <div class="banner-text">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-11">
+                        <h2 class="title__text text-end">Никаких шаблонов — мы</h2>
+                        <h2 class="title__text"> используем <span>физические</span> макеты, чтобы на <span>пальцах</span> объяснить материал.</h2>
                     </div>
                 </div>
             </div>
         </div>
-    </aside>
+    
+        <aside class="aside">
+            <div class="free-lesson">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="title__text-sub text-start text-md-center">Бесплатный пробный урок - это <span>легкий</span> способ получить информацию о курсе</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="free-lesson-head">
+                                <div class="input-box" data-radio="lesson_1">
+                                    <input type="radio" class="lesson-inp" id="lesson1" name="lesson" checked>
+                                    <label for="lesson1" class="lesson-lab activeLesson"> информатика</label>
+                                </div>
+                                <div class="input-box" data-radio="lesson_2">
+                                    <input type="radio" class="lesson-inp" id="lesson2" name="lesson">
+                                    <label for="lesson2" class="lesson-lab activeLesson">математика</label>
+                                </div>
+                            </div>
+                            <div class="free-lesson-body">
+                                <div class="lesson-video lesson_1">
+                                    <video
+                                        id="my-video"
+                                        class="video-js"
+                                        controls
+                                        preload="auto"
+                                        poster="assets/img/png/informatika.jpg"
+                                        data-setup="{}"
+                                    >
+                                    <source src="assets/video/video.mp4" type="video/mp4" />
+                                  </video>
+                                </div>
+                                <div class="lesson-video lesson_2">
+                                    <video
+                                        id="my-video"
+                                        class="video-js"
+                                        controls
+                                        preload="auto"
+                                        poster="assets/img/png/matematika.jpg"
+                                        data-setup="{}"
+                                    >
+                                    <source src="assets/video/video.mp4" type="video/mp4" />
+                                  </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="education">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title__text-sub text-end">Dr. Study обеспечивает всеми необходимыми <span>ресурсами</span> и <span>поддержкой</span> для успешной подготовки к экзаменам</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="education-item d-flex align-items-start flex-column flex-md-row">
+                                <div class="education-info">
+                                    <div class="education-box education_1">
+                                        <h4 class="education-box__title">/01 Понимание предмета</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/img/png/e1.png" alt="" class="education-box__img">
+                                        </div>
+                                        <p class="education-box__text">Один из наших главных принципов нашего подхода в том, что мы не учим просто зазубривать материал, алгоритмы решения задач, программы и так далее. Мы вкладываем в учеников понимание предмета как такового. </p>
+                                    </div>
+                                    <div class="education-box education_2">
+                                        <h4 class="education-box__title">/02 Наглядность полученных знаний</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/img/png/e2.png" alt="" class="education-box__img">
+                                        </div>
+                                        <p class="education-box__text">               Один из принципов нашего подхода в том, что мы всегда объясняем ученикам зачем всё это нужно, а также используем физические макеты, чтобы показать как это используется на практике.</p>
+                                    </div>
+                                    <div class="education-box education_3">
+                                        <h4 class="education-box__title">/03 Неформальная обстановка</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/img/png/e3.png" alt="" class="education-box__img">
+                                        </div>
+                                        <p class="education-box__text">               Каждый из наших преподавателей всего на 2-3 года старше учеников. От этого общения на уроке становится намного легче, пропадают различные неудобства и всё сконцентрировано на главном - на процессе обучения.</p>
+                                    </div>
+                                    <div class="education-box education_4">
+                                        <h4 class="education-box__title">/04 Разделение по уровню</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/img/png/e4.png" alt="" class="education-box__img abc">
+                                        </div>
+                                        <p class="education-box__text">               У нас предусмотрено 3 типа групп: A, B и C. Цель у всех одна - хорошо сдать ЕГЭ, но каждый начинает свой путь к этой цели с разных исходных знаний. Разделение по уровню происходит с помощью вступительного теста, а также учитывая дальнейшие цели ученика.</p>
+                                    </div>
+                                    <div class="education-box education_5">
+                                        <h4 class="education-box__title">/05 Продвинутая система контроля знаний</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/img/png/e5.png" alt="" class="education-box__img">
+                                        </div>
+                                        <p class="education-box__text">               Мы очень ответственно относимся к оцениванию наших учеников. У нас есть 3 основных элемента контроля: домашние задания в виде тестов и вопросов с развернутым ответом, ежемесячные аттестации, коллоквиумы.</p>
+                                    </div>
+                                </div>
+                                <div class="education-btns d-flex  flex-column flex-md-row">
+                                    <div class="education-btn d-none" data-radio="education_1">
+                                        /01 Понимание предмета
+                                    </div>
+                                    <div class="education-btn" data-radio="education_2">
+                                        /02 Наглядность полученных знаний
+                                    </div>
+                                    <div class="education-btn" data-radio="education_3">
+                                        /03 Неформальная обстановка
+                                    </div>
+                                    <div class="education-btn" data-radio="education_4">
+                                        /04 Разделение по уровню
+                                    </div>
+                                    <div class="education-btn" data-radio="education_5">
+                                        /05 Продвинутая система контроля 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="faq__title">Часто задаваемые вопросы</h3>
+                            <div class="faq-item">
+                                <div class="faq-head">Часто задаваемый вопрос</div>
+                                <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-head">Часто задаваемый вопрос</div>
+                                <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-head">Часто задаваемый вопрос</div>
+                                <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-head">Часто задаваемый вопрос</div>
+                                <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-head">Часто задаваемый вопрос</div>
+                                <div class="faq-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </div>
+                            </div>
+                            <a href="#" class="faq__link">
+                                <span>Оставить заявку</span>
+                                <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.67761 38.0331L38.033 2.67783M38.033 2.67783L2.67764 2.67783M38.033 2.67783L38.033 38.0332" stroke="white" stroke-width="5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <a href="./index.html" class="logo">
+                            <img src="assets/img/png/logo-white.png" alt="">
+                        </a>
+                        <p class="footer__text">2023, Dr. Study</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-    <footer class="footer">
-        <div class="container">
+
+    <main class="main d-none">
+        <div class="container position-relative">
             <div class="row">
-                <div class="col-12 d-flex align-items-center justify-content-between">
-                    <a href="./index.html" class="logo">
-                        <img src="assets/img/png/logo-white.png" alt="">
-                    </a>
-                    <p class="footer__text">2023, Dr. Study</p>
+                <div class="col-12">
+
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="animate">
+            <!-- animate page 1 -->
+            <div class="animate-box anim-page-1">
+                <div class="anim anim_1">
+                    <!-- <h2 class="anim__title">Понимание</h2> -->
+                    <img src="assets/img/png/anim1.png" alt="" class="anim">
+                    <div class="print">Привет, ребята. Мы сегодня с вами будем проходить тему «Производная функции». Вот таблица со всеми производными, которые вам понадобятся. Просто выучите ее!</div>
+                   <div class="show-anim show-anim_1"></div>
+                </div>
+                <div class="anim anim_1_1 d-none">
+                    <div class="position-relative">
+                        <img src="assets/img/png/n1.png" alt="" class="">
+                        <div class="print print2 ">Накачивать учеников кучей материалов для заучивания не принесёт никакой пользы. Понимание предмета – ключ к успешной сдачи экзамена и дальнейшему профессиональному пути. Мы вам объясним, почему * (xˆn)' = n * xˆ(n-1)*, почему D = b2 – 4ac и многое другое. И вы не будете идти на экзамен с мыслями «только бы не забыть эту формулу».</div>
+                    </div>
+                    <div class="show-anim show-anim_1_1"></div>
+                </div>
+                
+                
+                <div class="buttons">
+                    <button class="btn">    
+                        <svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.4512 30.9803H15.2852C7.28712 30.9803 0.888672 24.2932 0.888672 16.2182C0.888672 8.01701 7.41017 1.45605 15.2852 1.45605H28.4512C36.4492 1.45605 42.8477 8.14318 42.8477 16.2182C42.8477 24.2932 36.4492 30.9803 28.4512 30.9803Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M32.2656 30.4757L38.2949 35.144V26.9429" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.8066 17.9849C22.826 17.9849 23.6523 17.1375 23.6523 16.0923C23.6523 15.047 22.826 14.1997 21.8066 14.1997C20.7873 14.1997 19.9609 15.047 19.9609 16.0923C19.9609 17.1375 20.7873 17.9849 21.8066 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.0352 17.9849C32.0545 17.9849 32.8809 17.1375 32.8809 16.0923C32.8809 15.047 32.0545 14.1997 31.0352 14.1997C30.0158 14.1997 29.1895 15.047 29.1895 16.0923C29.1895 17.1375 30.0158 17.9849 31.0352 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.5781 17.9849C13.5975 17.9849 14.4238 17.1375 14.4238 16.0923C14.4238 15.047 13.5975 14.1997 12.5781 14.1997C11.5588 14.1997 10.7324 15.047 10.7324 16.0923C10.7324 17.1375 11.5588 17.9849 12.5781 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn">
+                        <svg width="57" height="35" viewBox="0 0 57 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.3809 33.63H11.0488C5.7578 33.63 1.32812 29.214 1.32812 23.6624V11.0452C1.32812 5.61985 5.63476 1.07764 11.0488 1.07764H37.3809C42.6719 1.07764 47.1015 5.49368 47.1015 11.0452V23.6624C47.1015 29.214 42.7949 33.63 37.3809 33.63Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M47.1016 11.1713L56.084 7.13379V29.3401L47.1016 23.7885V11.1713Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn">
+                        <svg width="22" height="48" viewBox="0 0 22 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9903 38.873C5.33014 38.873 0.777344 34.2046 0.777344 28.4007V11.3675C0.777344 5.56361 5.33014 0.895264 10.9903 0.895264C16.6505 0.895264 21.2032 5.56361 21.2032 11.3675V28.4007C21.2032 34.2046 16.6505 38.873 10.9903 38.873Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.9902 38.873V46.9481" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.777344 46.948H21.2032" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- animate page 2 -->
+            <div class="animate-box anim-page-2 d-none ">
+                 <div class="anim anim_2">
+                    <h2 class="anim__title">Наглядность</h2>
+                    <img src="assets/img/png/anim2.jpg" alt="" class="anim">
+                    <div class="print">Производная функции нужна для определения точек экстремуму. Точки экстремума показывают, где у функции будет перегиб и она изменит направление. Также можно понять где функция будет возрастать, а где убывать.</div>
+                    <div class="print print2 d-none">Блин, а зачем мне вообще знать где у функции происходит этот перегиб?</div>
+                    
+                    <div class="show-anim show-anim_2"></div>
+                </div>
+
+                <div class="anim anim_2_1 d-none">
+                    <img src="assets/img/png/anim3.jpg" alt="" class="anim">
+                    <div class="print">Данная информация нам будет нужна при решении 11ого задания из первой части.</div>
+                    <div class="print print2 d-none">А, вот теперь понятно.</div>
+                    <div class="show-anim show-anim_2_1"></div>
+                </div>
+
+                <div class="anim anim_2_2 d-none">
+                    <div class="position-relative">
+                        <img src="assets/img/png/n2.png" alt="" class="">
+                        <div class="print ">Вы получаете образование не чтобы сдавать экзамены. Вы должны понимать для чего вы что-либо учите, для чего вам понадобятся ваши знания в будущем! И мы реальных примерах будем вам обьяснять где это применяется и зачем вам это понадобится в жизни.</div>
+                    </div>
+                    <div class="show-anim show-anim_2_2"></div>
+                </div>
+                
+
+                <div class="buttons">
+                    <button class="btn">    
+                        <svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.4512 30.9803H15.2852C7.28712 30.9803 0.888672 24.2932 0.888672 16.2182C0.888672 8.01701 7.41017 1.45605 15.2852 1.45605H28.4512C36.4492 1.45605 42.8477 8.14318 42.8477 16.2182C42.8477 24.2932 36.4492 30.9803 28.4512 30.9803Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M32.2656 30.4757L38.2949 35.144V26.9429" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.8066 17.9849C22.826 17.9849 23.6523 17.1375 23.6523 16.0923C23.6523 15.047 22.826 14.1997 21.8066 14.1997C20.7873 14.1997 19.9609 15.047 19.9609 16.0923C19.9609 17.1375 20.7873 17.9849 21.8066 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.0352 17.9849C32.0545 17.9849 32.8809 17.1375 32.8809 16.0923C32.8809 15.047 32.0545 14.1997 31.0352 14.1997C30.0158 14.1997 29.1895 15.047 29.1895 16.0923C29.1895 17.1375 30.0158 17.9849 31.0352 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.5781 17.9849C13.5975 17.9849 14.4238 17.1375 14.4238 16.0923C14.4238 15.047 13.5975 14.1997 12.5781 14.1997C11.5588 14.1997 10.7324 15.047 10.7324 16.0923C10.7324 17.1375 11.5588 17.9849 12.5781 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn">
+                        <svg width="57" height="35" viewBox="0 0 57 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.3809 33.63H11.0488C5.7578 33.63 1.32812 29.214 1.32812 23.6624V11.0452C1.32812 5.61985 5.63476 1.07764 11.0488 1.07764H37.3809C42.6719 1.07764 47.1015 5.49368 47.1015 11.0452V23.6624C47.1015 29.214 42.7949 33.63 37.3809 33.63Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M47.1016 11.1713L56.084 7.13379V29.3401L47.1016 23.7885V11.1713Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn">
+                        <svg width="22" height="48" viewBox="0 0 22 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9903 38.873C5.33014 38.873 0.777344 34.2046 0.777344 28.4007V11.3675C0.777344 5.56361 5.33014 0.895264 10.9903 0.895264C16.6505 0.895264 21.2032 5.56361 21.2032 11.3675V28.4007C21.2032 34.2046 16.6505 38.873 10.9903 38.873Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.9902 38.873V46.9481" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.777344 46.948H21.2032" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- animate page 3 -->
+            <div class="animate-box anim-page-3  d-none">
+                <div class="anim anim_3">
+                    <h2 class="anim__title">Неформальность <br> обстановки</h2>
+                   <img src="assets/img/png/anim4.jpg" alt="" class="anim">
+                   <div class="print">Вот тут чтобы найти экстремум функции мы сначала должны найти производную функции. Приводим все к красивому виду. И дальше приравниваем к нулю.</div>
+                   <div class="print print2 d-none">А почему там 5х , а не 3х. Ну ладно щас учитель закончит говорить и я спрошу.</div>
+                   
+                   <div class="show-anim show-anim_3"></div>
+               </div>
+
+               <div class="anim anim_3_1 d-none">
+                   <img src="assets/img/png/anim4.jpg" alt="" class="anim">
+                   <div class="print">Приравняли к нулю, решаем квадратное уравнение по виета. Корни 5 и 4.</div>
+                   <div class="print print2 d-none">А почему корни 5 и 4? Ну ладно щас это предложение закончит и точно спрошу.</div>
+                   <div class="show-anim show-anim_3_1"></div>
+               </div>
+
+               <div class="anim anim_3_2 d-none">
+                    <img src="assets/img/png/anim5.jpg" alt="" class="anim">
+                    <div class="print">Ну и теперь, очевидно, что максимум находится в точке 8, а минимум в точке 2.</div>
+                    <div class="print print2 d-none">Что? Почему?...</div>
+                    <div class="show-anim show-anim_3_2"></div>
+                </div>
+
+                <div class="anim anim_3_3 d-none">
+                    <img src="assets/img/png/anim5.jpg" alt="" class="anim">
+                    <div class="print">Ну что? Какие вопросы?</div>
+                    <div class="print print2 d-none">Блин, а какой у меня первый вопрос был?...</div>
+                    <div class="show-anim show-anim_3_3"></div>
+                </div>
+
+               <div class="anim anim_3_4 d-none">
+                   <div class="position-relative">
+                       <img src="assets/img/png/n3.png" alt="" class="">
+                       <div class="print ">Мы всего-лишь на пару лет старше своих учеников, поэтому разговор на «ты» лишь упростит образовательный процесс.Ведь чем формальные проходят встречи, тем менее они интересны и эффективны.</div>
+                       <div class="print print2 d-none">Многие в силу своего воспитания просто не могут перебить человека, который много старше их, и из-за этого многие вопросы так и остаются незаданными.</div>
+                   </div>
+                   <div class="show-anim show-anim_3_4"></div>
+               </div>
+               
+
+               <div class="buttons">
+                   <button class="btn">    
+                       <svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M28.4512 30.9803H15.2852C7.28712 30.9803 0.888672 24.2932 0.888672 16.2182C0.888672 8.01701 7.41017 1.45605 15.2852 1.45605H28.4512C36.4492 1.45605 42.8477 8.14318 42.8477 16.2182C42.8477 24.2932 36.4492 30.9803 28.4512 30.9803Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M32.2656 30.4757L38.2949 35.144V26.9429" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M21.8066 17.9849C22.826 17.9849 23.6523 17.1375 23.6523 16.0923C23.6523 15.047 22.826 14.1997 21.8066 14.1997C20.7873 14.1997 19.9609 15.047 19.9609 16.0923C19.9609 17.1375 20.7873 17.9849 21.8066 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M31.0352 17.9849C32.0545 17.9849 32.8809 17.1375 32.8809 16.0923C32.8809 15.047 32.0545 14.1997 31.0352 14.1997C30.0158 14.1997 29.1895 15.047 29.1895 16.0923C29.1895 17.1375 30.0158 17.9849 31.0352 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M12.5781 17.9849C13.5975 17.9849 14.4238 17.1375 14.4238 16.0923C14.4238 15.047 13.5975 14.1997 12.5781 14.1997C11.5588 14.1997 10.7324 15.047 10.7324 16.0923C10.7324 17.1375 11.5588 17.9849 12.5781 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                   </button>
+                   <button class="btn">
+                       <svg width="57" height="35" viewBox="0 0 57 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M37.3809 33.63H11.0488C5.7578 33.63 1.32812 29.214 1.32812 23.6624V11.0452C1.32812 5.61985 5.63476 1.07764 11.0488 1.07764H37.3809C42.6719 1.07764 47.1015 5.49368 47.1015 11.0452V23.6624C47.1015 29.214 42.7949 33.63 37.3809 33.63Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M47.1016 11.1713L56.084 7.13379V29.3401L47.1016 23.7885V11.1713Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                   </button>
+                   <button class="btn">
+                       <svg width="22" height="48" viewBox="0 0 22 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10.9903 38.873C5.33014 38.873 0.777344 34.2046 0.777344 28.4007V11.3675C0.777344 5.56361 5.33014 0.895264 10.9903 0.895264C16.6505 0.895264 21.2032 5.56361 21.2032 11.3675V28.4007C21.2032 34.2046 16.6505 38.873 10.9903 38.873Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M10.9902 38.873V46.9481" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M0.777344 46.948H21.2032" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                   </button>
+               </div>
+           </div>
+
+           <!-- animate page 4 -->
+           <div class="animate-box anim-page-4 d-none">
+            <div class="anim anim_4">
+                <h2 class="anim__title">Разделение <br> по уровню</h2>
+               <img src="assets/img/png/anim6.jpg" alt="" class="anim">
+               <div class="print">Это задание мы закончили. Что хотите дальше сделать?</div>
+               
+               <div class="show-anim show-anim_4"></div>
+           </div>
+
+           <div class="anim anim_4_1 d-none">
+                <img src="assets/img/png/anim7.jpg" alt="" class="anim">
+                <div class="print d-none">Давайте еще один номер такой разберем</div>
+                <div class="print print2 d-none">А можете еще раз сначала проговорить все?</div>
+                <div class="print print3 d-none">А что будет показывать вторая и третья производная у функции, можете пожалуйста объяснить?</div>
+                
+                <div class="show-anim show-anim_4_1"></div>
+            </div>
+            <div class="anim anim_4_2 d-none">
+                <div class="position-relative">
+                    <img src="assets/img/png/n4.png" alt="" class="">
+                    <div class="print"> У нас идет разделение на группы по всем этим критериями, чтобы каждый мог учиться в нужном ему темпе и заниматься в окружении людей с такими же целями как и у него.</div>
+                    <div class="print print2 d-none">У каждого свой темп обучения, у каждого свои начальные знания по предмета. Кто-то сдает информатику, чтобы поступить на рекламу, кто-то чтобы поступить на прикладную математику и информатику.</div>
+                </div>
+                <div class="show-anim show-anim_4_2"></div>
+            </div>
+            </div>
+
+            <!-- animate page 5 -->
+                 <div class="animate-box anim-page-5 d-none">
+                    <div class="anim anim_5">
+                        <img src="assets/img/png/anim8.jpg" alt="" class="anim">
+                        <div class="print">Наш урок подошел к концу. Кто понял нашу сегодняшнюю тему, киньте плюсики в чат. Ну отлично, вот вам на дом тест, чтобы точно убедится, что вы все поняли.</div>
+                       <div class="chat d-none">
+                        <p class="chat__title text-center">Чат:</p>
+                        <p class="chat-item"><span>Ученик1:</span> +</p>
+                        <p class="chat-item"><span>Ученик2:</span> +</p>
+                        <p class="chat-item"><span>Ученик3:</span> +</p>
+
+                       </div>
+                    </div>
+                    <div class="anim anim_5_1 d-none">
+                        <div class="position-relative">
+                            <img src="assets/img/png/n5.png" alt="" class="">
+                            <div class="print ">То насколько вы хорошо поняли материал в первую очередь важно именно ВАМ. И ни один тестик не сможет в полной мере это определить. Для этого нужна очень обширная система проверки ваших знаний. И мы будем вытягивать из вас все знания, которые у вас есть, чтобы указать на ваши пробелы, которые мы вместе с вами будем заполнять. Ведь именно в этом и заключается работа преподавателя.</div>
+                        </div>
+                        <div class="show-anim show-anim_5"></div>
+                    </div>
+                    
+                    
+                    <div class="buttons">
+                        <button class="btn">    
+                            <svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.4512 30.9803H15.2852C7.28712 30.9803 0.888672 24.2932 0.888672 16.2182C0.888672 8.01701 7.41017 1.45605 15.2852 1.45605H28.4512C36.4492 1.45605 42.8477 8.14318 42.8477 16.2182C42.8477 24.2932 36.4492 30.9803 28.4512 30.9803Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M32.2656 30.4757L38.2949 35.144V26.9429" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.8066 17.9849C22.826 17.9849 23.6523 17.1375 23.6523 16.0923C23.6523 15.047 22.826 14.1997 21.8066 14.1997C20.7873 14.1997 19.9609 15.047 19.9609 16.0923C19.9609 17.1375 20.7873 17.9849 21.8066 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M31.0352 17.9849C32.0545 17.9849 32.8809 17.1375 32.8809 16.0923C32.8809 15.047 32.0545 14.1997 31.0352 14.1997C30.0158 14.1997 29.1895 15.047 29.1895 16.0923C29.1895 17.1375 30.0158 17.9849 31.0352 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.5781 17.9849C13.5975 17.9849 14.4238 17.1375 14.4238 16.0923C14.4238 15.047 13.5975 14.1997 12.5781 14.1997C11.5588 14.1997 10.7324 15.047 10.7324 16.0923C10.7324 17.1375 11.5588 17.9849 12.5781 17.9849Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="btn">
+                            <svg width="57" height="35" viewBox="0 0 57 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37.3809 33.63H11.0488C5.7578 33.63 1.32812 29.214 1.32812 23.6624V11.0452C1.32812 5.61985 5.63476 1.07764 11.0488 1.07764H37.3809C42.6719 1.07764 47.1015 5.49368 47.1015 11.0452V23.6624C47.1015 29.214 42.7949 33.63 37.3809 33.63Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M47.1016 11.1713L56.084 7.13379V29.3401L47.1016 23.7885V11.1713Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="btn">
+                            <svg width="22" height="48" viewBox="0 0 22 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.9903 38.873C5.33014 38.873 0.777344 34.2046 0.777344 28.4007V11.3675C0.777344 5.56361 5.33014 0.895264 10.9903 0.895264C16.6505 0.895264 21.2032 5.56361 21.2032 11.3675V28.4007C21.2032 34.2046 16.6505 38.873 10.9903 38.873Z" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.9902 38.873V46.9481" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0.777344 46.948H21.2032" stroke="#606060" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        </div>
+    </main>
 
     <script src="assets/js/plugin/jquery.js"></script>
     <script src="assets/js/plugin/video.js"></script>
+    <script src="assets/js/plugin/gsap.js"></script>
+    <script src="assets/js/plugin/gsapScroll.js"></script>
     <script src="assets/js/header.js"></script>
+    <script src="assets/js/anim.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
