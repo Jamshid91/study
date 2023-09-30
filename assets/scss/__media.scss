@@ -898,3 +898,769 @@
     }
   }
 }
+
+
+@media (max-width: 900px) {
+  .main {
+    .animate {
+      &-box {
+        .anim__img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    .animate {
+      &-box {
+        .print {
+          position: absolute;
+          top: 40px;
+          width: 220px;
+          padding: 10px 15px;
+          font-size: 12px;
+          line-height: 14px;
+          text-indent: 10px;
+        }
+        .print2 {
+          font-size: 12px !important;
+          line-height: 14px !important;
+        }
+      }
+      .buttons {
+        .btn {
+          width: 40px;
+          height: 40px;
+          svg {
+            min-width: 25px;
+          }
+        }
+      }
+      .anim_1 {
+        .print {
+          left: 18%;
+          height: 120px;
+        }
+      }
+      .anim_1_1 {
+        .print {
+          background-image: url(../img/png/text_4_n.png);
+          font-size: 14px;
+          line-height: 15px;
+          width: 350px;
+          height: 200px;
+          top: -60%;
+          left: 0%;
+          padding: 15px 40px;
+        }
+      }
+      .anim_2,
+      .anim_2_1 {
+        .print{
+          width: 250px;
+          height: 120px;
+          background-image: url(../img/png/text2.png);
+          right: 25%;
+        }
+        .print2 {
+          width: 220px;
+          height: 60px;
+        }
+      }
+      .anim_2_1 {
+        .print {
+          width: 250px;
+          height: 60px;
+        }
+        .print2 {
+          width: 200px;
+          height: 40px;
+          padding: 15px;
+        }
+      }
+      .anim_2_2 {
+        img {
+          margin: 0;
+        }
+        .print {
+          font-size: 13px;
+          line-height: 15px;
+          width: 300px;
+          height: 180px;
+          padding: 30px;
+          left: 30%;
+          top: -25%;
+        }
+      }
+      .anim_3,
+      .anim_3_1 {
+        .print {
+          width: 200px;
+          height: 120px;
+          right: 1%;
+        }
+        .print2 {
+          height: 70px;
+          padding: 5px 15px;
+        }
+      }
+      .anim_3_1 {
+        .print {
+          height: 80px;
+        }
+        .print2 {
+          height: 60px;
+        }
+      }
+      .anim_3_2 {
+        .print {
+          width: 220px;
+          height: 70px;
+        }
+        .print2 {
+          width: 150px;
+          height: 50px;
+        }
+      }
+      .anim_3_4 {
+        .print {
+          width: 250px;
+          height: 140px;
+          padding: 20px 30px;
+          left: 45%;
+          font-size: 12px;
+          line-height: 14px;
+        }
+        .print2 {
+          width: 250px;
+          height: 140px;
+          left: 15%;
+        }
+        img {
+          margin: 0;
+        }
+      }
+      .anim_4 {
+        .print {
+          height: 50px;
+        }
+      }
+      .anim_4_1 {
+        .print {
+          width: 170px;
+          height: 50px;
+          padding: 5px;
+          left: 18%;
+        }
+        .print2 {
+          width: 170px;
+          height: 50px;
+          padding: 5px;
+          left: 55%;
+        }
+        .print3 {
+          width: 250px;
+          height: 70px;
+          padding: 10px 10px 10px 20px;
+          top: 60%;
+          left: 35%;
+        }
+      }
+      .anim_4_2 {
+        padding-bottom: 20px;
+        .print {
+          font-size: 12px;
+          line-height: 14px;
+          width: 250px;
+          height: 120px;
+          top: -25%;
+          right: 33%;
+          padding: 15px 20px;
+        }
+        .print2 {
+          width: 250px;
+          height: 150px;
+          top: -90%;
+          right: 15%;
+          padding: 15px 20px;
+        }
+      }
+      .anim_5 {
+        .print {
+          width: 235px;
+          height: 100px;
+          left: 16%;
+          top: 13%;
+        }
+        .chat {
+          right: 20px;
+          width: 140px;
+          height: 120px;
+          border-radius: 30px;
+          padding: 10px;
+         p {
+          font-size: 12px;
+          margin-top: 0;
+          &:first-child {
+            margin-top: 0;
+          }
+          span {
+            margin-right: 15px;
+          }
+         }
+        }
+      }
+      .anim_5_1 {
+        padding: 20px;
+        .print {
+          font-size: 12px;
+          line-height: 14px;
+          width: 320px;
+          height: 200px;
+          top: -60%;
+          left: 40%;
+          padding: 20px 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    .animate {
+      &-box {
+        .print {
+          width: 170px;
+          font-size: 10px;
+          line-height: 12px;
+        }
+        .print2 {
+          font-size: 10px !important;
+          line-height: 12px !important;
+        }
+      }
+      .buttons {
+        .btn {
+          width: 30px;
+          height: 30px;
+          margin-right: 2px;
+          svg {
+            min-width: 20px;
+            height: 20px;
+          }
+        }
+      }
+      .anim_1 {
+        .print {
+          left: 18%;
+          height: 120px;
+        }
+      }
+      .anim_1_1 {
+        .print {
+          font-size: 10px;
+          line-height: 12px;
+          width: 250px;
+          height: 170px;
+          top: -70%;
+          left: 0%;
+          padding: 15px 30px;
+        }
+      }
+      .anim_2,
+      .anim_2_1 {
+        .print{
+          width: 210px;
+          height: 110px;
+        }
+        .print2 {
+          width: 180px;
+          height: 60px;
+          left: 20%;
+          &::before {
+            width: 15px;
+            height: 15px;
+            top: 100%;
+            left: 0%;
+          }
+          &::after {
+            width: 10px;
+            height: 10px;
+            left: -5%;
+          }
+        }
+      }
+      .anim_2_1 {
+        .print {
+          width: 200px;
+          height: 60px;
+        }
+        .print2 {
+          width: 180px;
+          height: 40px;
+          padding: 15px;
+        }
+      }
+      .anim_2_2 {
+        .print {
+          font-size: 10px;
+          line-height: 12px;
+          width: 250px;
+          height: 130px;
+          padding: 20px;
+          left: 30%;
+          top: -25%;
+        }
+      }
+      .anim_3,
+      .anim_3_1 {
+        .print {
+          width: 160px;
+          height: 120px;
+          right: 1%;
+          top: 5%;
+        }
+        .print2 {
+          height: 60px;
+          padding: 5px 15px;
+          top: 18%;
+          &::before {
+            width: 15px;
+            height: 15px;
+          }
+          &::after {
+            width: 10px;
+            height: 10px;
+            top: 130%;
+          }
+        }
+      }
+      .anim_3_1 {
+        .print {
+          height: 80px;
+        }
+        .print2 {
+          height: 60px;
+        }
+      }
+      .anim_3_2 {
+        .print {
+          width: 180px;
+          height: 65px;
+        }
+        .print2 {
+          width: 130px;
+          height: 50px;
+          &::before {
+            width: 15px;
+            height: 15px;
+          }
+          &::after {
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+      .anim_3_3 {
+        .print {
+          width: 120px;
+          height: 40px;
+        }
+        .print2 {
+          width: 160px;
+          height: 50px;
+          &::before {
+            width: 15px;
+            height: 15px;
+          }
+          &::after {
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+      .anim_3_4 {
+        .print {
+          width: 220px;
+          height: 130px;
+          padding: 20px 25px;
+          left: 45%;
+          font-size: 10px;
+          line-height: 12px;
+        }
+        .print2 {
+          width: 250px;
+          height: 110px;
+          left: 15%;
+        }
+        img {
+          margin: 0;
+        }
+      }
+      .anim_4 {
+        .print {
+          height: 60px;
+        }
+      }
+      .anim_4_1 {
+        .print {
+          width: 150px;
+          height: 60px;
+          padding: 5px;
+          left: 18%;
+        }
+        .print2 {
+          width: 150px;
+          height: 60px;
+          padding: 5px;
+          left: 55%;
+        }
+        .print3 {
+          width: 250px;
+          height: 70px;
+          padding: 10px 10px 10px 20px;
+          top: 60%;
+          left: 35%;
+        }
+      }
+      .anim_4_2 {
+        padding-bottom: 20px;
+        .print {
+          font-size: 10px;
+          line-height: 12px;
+          width: 250px;
+          height: 100px;
+          top: -25%;
+          right: 33%;
+          padding: 15px 20px;
+        }
+        .print2 {
+          width: 250px;
+          height: 120px;
+          top: -100%;
+          right: 15%;
+          padding: 15px 20px;
+        }
+      }
+      .anim_5 {
+        .print {
+          width: 200px;
+          height: 100px;
+          left: 16%;
+          top: 13%;
+        }
+        .chat {
+          right: 20px;
+          width: 120px;
+          height: 100px;
+          border-radius: 30px;
+          padding: 10px;
+         p {
+          font-size: 10px;
+          line-height: 12px;
+          margin-top: 0;
+          &:first-child {
+            margin-top: 0;
+          }
+          span {
+            margin-right: 15px;
+          }
+         }
+        }
+      }
+      .anim_5_1 {
+        padding: 20px;
+        .print {
+          font-size: 10px;
+          line-height: 12px;
+          width: 260px;
+          height: 200px;
+          top: -60%;
+          left: 40%;
+          padding: 20px 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 476px) {
+  .main {
+    .animate {
+      &-box {
+        .print {
+          width: 120px;
+          font-size: 10px;
+          line-height: 12px;
+          font-size: 7px !important;
+          line-height: 8.5px !important;
+        }
+        .print2 {
+          font-size: 7px !important;
+          line-height: 8.5px !important;
+        }
+      }
+      .anim_1 {
+        .print {
+          left: 18%;
+          top: 5%;
+          height: 90px;
+        }
+      }
+      .anim_1_1 {
+        padding: 0;
+        .print {
+          width: 180px;
+          height: 120px;
+          top: -50%;
+          left: 15%;
+          padding: 15px 20px;
+        }
+      }
+      .anim_2,
+      .anim_2_1 {
+        .print{
+          width: 170px;
+          height: 80px;
+          top: 5%;
+        }
+        .print2 {
+          width: 155px;
+          height: 45px;
+          top: 45%;
+          left: 20%;
+          &::before {
+            width: 15px;
+            height: 15px;
+            top: 100%;
+            left: 0%;
+          }
+          &::after {
+            width: 10px;
+            height: 10px;
+            left: -5%;
+          }
+        }
+      }
+      .anim_2_1 {
+        .print {
+          width: 150px;
+          height: 40px;
+          top: 10%;
+        }
+        .print2 {
+          width: 110px;
+          height: 30px;
+          padding: 10px;
+          top: 25%; 
+          &::before {
+            width: 10px;
+            height: 10px;
+          }
+          &::after {
+            width: 5px;
+            height: 5px;
+          }
+        }
+      }
+      .anim_2_2 {
+        padding: 20px;
+        img {
+          margin: 0;
+          width: 60%;
+        }
+        .print {
+          width: 200px;
+          height: 100px;
+          padding: 20px;
+          left: 30%;
+          top: -25%;
+        }
+      }
+      .anim_3,
+      .anim_3_1 {
+        .print {
+          width: 120px;
+          height: 90px;
+          right: 1%;
+          top: 2%;
+        }
+        .print2 {
+          height: 40px;
+          padding: 5px 10px;
+          top: 18%;
+          &::before {
+            width: 10px;
+            height: 10px;
+          }
+          &::after {
+            width: 5px;
+            height: 5px;
+            top: 130%;
+          }
+        }
+      }
+      .anim_3_1 {
+        .print {
+          top: 10%;
+          height: 50px;
+        }
+        .print2 {
+          top: 20%;
+          height: 40px;
+        }
+      }
+      .anim_3_2 {
+        .print {
+          width: 140px;
+          height: 50px;
+          padding: 10px;
+        }
+        .print2 {
+          width: 100px;
+          height: 30px;
+          &::before {
+            width: 10px;
+            height: 10px;
+          }
+          &::after {
+            width: 5px;
+            height: 5px;
+          }
+        }
+      }
+      .anim_3_3 {
+        .print {
+          width: 100px;
+          height: 40px;
+        }
+        .print2 {
+          width: 130px;
+          height: 35px;
+          top: 17%;
+          &::before {
+            width: 10px;
+            height: 10px;
+          }
+          &::after {
+            width: 5px;
+            height: 5px;
+          }
+        }
+      }
+      .anim_3_4 {
+        .print {
+          width: 180px;
+          height: 80px;
+          padding: 10px 20px;
+          left: 45%;
+          font-size: 10px;
+          line-height: 12px;
+        }
+        .print2 {
+          width: 180px;
+          height: 70px;
+          left: 15%;
+          padding: 10px 20px;
+        }
+        img {
+          margin: 0;
+        }
+      }
+      .anim_4 {
+        .print {
+          height: 50px;
+        }
+      }
+      .anim_4_1 {
+        .print {
+          width: 100px;
+          height: 35px;
+          padding: 5px;
+          top: 8%;
+          left: 18%;
+        }
+        .print2 {
+          width: 100px;
+          height: 40px;
+          padding: 5px;
+          top: 8%;
+          left: 55%;
+        }
+        .print3 {
+          width: 160px;
+          height: 45px;
+          padding: 10px 10px 10px 20px;
+          top: 60%;
+          left: 35%;
+        }
+      }
+      .anim_4_2 {
+        padding-bottom: 10px;
+        img { 
+          width: 80%;
+          margin-right: -20px;
+        }
+        .print {
+          width: 170px;
+          height: 80px;
+          top: -25%;
+          right: 33%;
+          padding: 15px 20px;
+        }
+        .print2 {
+          width: 180px;
+          height: 90px;
+          top: -100%;
+          right: 15%;
+          padding: 15px 20px;
+        }
+      }
+      .anim_5 {
+        .print {
+          width: 140px;
+          height: 70px;
+          left: 18%;
+          top: 13%;
+        }
+        .chat {
+          right: 10px;
+          top: 10px;
+          width: 80px;
+          height: 80px;
+          border-radius: 20px;
+          padding: 10px;
+         p {
+          font-size: 7px;
+          line-height: 7px;
+          margin-top: 3px;
+          &:first-child {
+            margin-top: 0;
+          }
+          span {
+            margin-right: 15px;
+          }
+         }
+        }
+      }
+      .anim_5_1 {
+        padding: 10px;
+        img {
+          width: 60%;
+        }
+        .print {
+          width: 200px;
+          height: 120px;
+          top: -60%;
+          left: 40%;
+          padding: 15px 20px;
+        }
+      }
+    }
+  }
+}

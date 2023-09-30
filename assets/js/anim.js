@@ -1,6 +1,7 @@
 const activePage = document.querySelector('.page'),
       mainPage = document.querySelector('.main'),
-      showMainBtn = document.querySelector('.first-box__btn')
+      showMainBtn = document.querySelector('.first-box__btn'),
+      handle = document.querySelector('.handle');
 
 showMainBtn.addEventListener('click', () => {
     activePage.classList.add('d-none');
@@ -9,10 +10,12 @@ showMainBtn.addEventListener('click', () => {
 })
 
 
-
 function animateFunc() {
     const printFunc = () => {
         const elem = document.querySelector('.anim_1 .print');
+        setTimeout(() => {
+            elem.classList.remove('d-none')
+        }, 500);
         const text = elem.textContent.replace(/\s+/g, ' ').trim();
     
         let count = 0;
@@ -32,14 +35,16 @@ function animateFunc() {
                 setTimeout(() => {
                     anim_1_1.classList.remove('d-none');
                     printFunc2();
-                }, 1200);
+                }, 2500);
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     
-    printFunc();
+    setTimeout(() => {
+        printFunc()
+    }, 500);
     
     const printFunc2 = () => {
         const elem = document.querySelector('.anim_1_1 .print2');
@@ -57,30 +62,16 @@ function animateFunc() {
             count++
     
             if(count === text.length) {
-                clearInterval(interval)
-                window.addEventListener('scroll', () => {
-                    const myInfo = document.querySelector('.show-anim_1_1')
-                          page_1 = document.querySelector('.anim-page-1')
-                          anim_2 = document.querySelector('.anim-page-2')
-                  
-                  
-                    const positionMyInfo = myInfo.getBoundingClientRect().top;
-                  
-                    const screenPosition = window.innerHeight;
-                  
-                    if(screenPosition > positionMyInfo) {
-                        page_1.classList.add('lastPage')
-                        anim_2.classList.remove('d-none');
-                        myInfo.classList.remove('show-anim_1_1')
-                        printFunc3();
-                    } 
-                  
-                  })
+                clearInterval(interval);
+
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 1000);
             }
-             
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
+    
     
     const printFunc3 = () => {
         const elem = document.querySelector('.anim-page-2 .print');
@@ -99,17 +90,17 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-                window.scrollTo(0, 0);
+               
                 setTimeout(() => {
                     printFunc4()
                 }, 500);
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
-    
-    
+
+
     const printFunc4 = () => {
         const elem = document.querySelector('.anim_2 .print2');
                 setTimeout(() => {
@@ -130,32 +121,15 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-                window.addEventListener('scroll', () => {
-                    const myInfo = document.querySelector('.show-anim_2')
-                          anim_2 = document.querySelector('.anim_2')
-                          anim_2_1 = document.querySelector('.anim_2_1')
-                  
-                  
-                    const positionMyInfo = myInfo.getBoundingClientRect().top;
-                  
-                    const screenPosition = window.innerHeight;
-                  
-                    if(screenPosition > positionMyInfo) {
-                        anim_2.classList.add('animPage');
-                        myInfo.classList.remove('show-anim_2')
-                        anim_2_1.classList.remove('d-none');
-                        printFunc5(); 
-                        
-                    } 
-                  
-                  })
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 1000);
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
-    
-    
+
     const printFunc5 = () => {
         const elem = document.querySelector('.anim_2_1 .print');
         const text = elem.textContent.replace(/\s+/g, ' ').trim();
@@ -178,8 +152,8 @@ function animateFunc() {
                 }, 500);
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     
     const printFunc6 = () => {
@@ -210,9 +184,9 @@ function animateFunc() {
             }
              
         }, 70);
-        window.scrollTo(0, 0);
+       
     }
-    
+        
     const printFunc7 = () => {
         const elem = document.querySelector('.anim_2_2 .print');
         elem.classList.remove('d-none')
@@ -231,28 +205,11 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-                window.addEventListener('scroll', () => {
-                    const myInfo = document.querySelector('.show-anim_2_2')
-                          anim2 = document.querySelector('.anim-page-2')
-                          anim3 = document.querySelector('.anim-page-3')
-                  
-                  
-                    const positionMyInfo = myInfo.getBoundingClientRect().top;
-                  
-                    const screenPosition = window.innerHeight;
-                  
-                    if(screenPosition > positionMyInfo) {
-                        anim2.classList.add('animPage');
-                        anim3.classList.remove('d-none');
-                        myInfo.classList.remove('show-anim_2_2')
-                        printFunc8();
-                    } 
-                  
-                  })
+               
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     
     const printFunc8 = () => {
@@ -277,8 +234,8 @@ function animateFunc() {
                 }, 500);
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     const printFunc9 = () => {
         const elem = document.querySelector('.anim_3 .print2');
@@ -300,28 +257,10 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-                window.addEventListener('scroll', () => {
-                    const myInfo = document.querySelector('.show-anim_3')
-                          anim3 = document.querySelector('.anim_3')
-                          anim3_1 = document.querySelector('.anim_3_1')
-                  
-                  
-                    const positionMyInfo = myInfo.getBoundingClientRect().top;
-                  
-                    const screenPosition = window.innerHeight;
-                  
-                    if(screenPosition > positionMyInfo) {
-                        anim3.classList.add('d-none');
-                        anim3_1.classList.remove('d-none');
-                        myInfo.classList.remove('show-anim_3')
-                        printFunc10();
-                    } 
-                  
-                  })
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     
     const printFunc10 = () => {
@@ -346,8 +285,8 @@ function animateFunc() {
                 }, 500);
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     
     const printFunc11 = () => {
@@ -370,28 +309,10 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-                window.addEventListener('scroll', () => {
-                    const myInfo = document.querySelector('.show-anim_3_1')
-                          anim3_1 = document.querySelector('.anim_3_1')
-                          anim3_2 = document.querySelector('.anim_3_2')
-                  
-                  
-                    const positionMyInfo = myInfo.getBoundingClientRect().top;
-                  
-                    const screenPosition = window.innerHeight;
-                  
-                    if(screenPosition > positionMyInfo) {
-                        anim3_1.classList.add('d-none');
-                        anim3_2.classList.remove('d-none');
-                        myInfo.classList.remove('show-anim_3_1')
-                        printFunc12();
-                    } 
-                  
-                  })
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     
     const printFunc12 = () => {
@@ -417,7 +338,7 @@ function animateFunc() {
             }
              
         }, 70);
-        window.scrollTo(0, 0);
+       
     }
     
     const printFunc13 = () => {
@@ -440,28 +361,10 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-                window.addEventListener('scroll', () => {
-                    const myInfo = document.querySelector('.show-anim_3_2')
-                          anim3_2 = document.querySelector('.anim_3_2')
-                          anim3_3 = document.querySelector('.anim_3_3')
-                  
-                  
-                    const positionMyInfo = myInfo.getBoundingClientRect().top;
-                  
-                    const screenPosition = window.innerHeight;
-                  
-                    if(screenPosition > positionMyInfo) {
-                        anim3_2.classList.add('d-none');
-                        anim3_3.classList.remove('d-none');
-                        myInfo.classList.remove('show-anim_3_2')
-                        printFunc14();
-                    } 
-                  
-                  })
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     
     const printFunc14 = () => {
@@ -486,8 +389,8 @@ function animateFunc() {
                 }, 500);
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     
     const printFunc15 = () => {
@@ -514,11 +417,11 @@ function animateFunc() {
                 setTimeout(() => {
                     anim3_4.classList.remove('d-none');
                     printFunc16();
-                }, 500);
+                }, 2500);
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     
     const printFunc16 = () => {
@@ -547,8 +450,8 @@ function animateFunc() {
                 
             }
              
-        }, 35);
-        window.scrollTo(0, 0);
+        }, 45);
+       
     }
     
     const printFunc17 = () => {
@@ -571,30 +474,9 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-                window.addEventListener('scroll', () => {
-                    const myInfo = document.querySelector('.show-anim_3_4')
-                          anim3 = document.querySelector('.anim-page-3')
-                          anim4 = document.querySelector('.anim-page-4')
-                  
-                  
-                    const positionMyInfo = myInfo.getBoundingClientRect().top;
-                  
-                    const screenPosition = window.innerHeight;
-                  
-                    if(screenPosition > positionMyInfo) {
-                        anim3.classList.add('d-none');
-                        anim4.classList.remove('d-none');
-                        myInfo.classList.remove('show-anim_3_4')
-                        setTimeout(() => {
-                            printFunc18();
-                        }, 500);
-                        window.scrollTo(0, 0);
-                    } 
-                  
-                  })
             }
              
-        }, 35);
+        }, 45);
     }
     
     const printFunc18 = () => {
@@ -617,30 +499,9 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-                window.addEventListener('scroll', () => {
-                    const myInfo = document.querySelector('.show-anim_4')
-                          anim4 = document.querySelector('.anim_4')
-                          anim4_1 = document.querySelector('.anim_4_1')
-                  
-                  
-                    const positionMyInfo = myInfo.getBoundingClientRect().top;
-                  
-                    const screenPosition = window.innerHeight;
-                  
-                    if(screenPosition > positionMyInfo) {
-                        anim4.classList.add('d-none');
-                        anim4_1.classList.remove('d-none');
-                        myInfo.classList.remove('show-anim_4')
-                        setTimeout(() => {
-                            printFunc19();
-                        }, 500);
-                        window.scrollTo(0, 0);
-                    } 
-                  
-                  })
             }
              
-        }, 35);
+        }, 45);
     }
     
     const printFunc19 = () => {
@@ -666,10 +527,10 @@ function animateFunc() {
                 setTimeout(() => {
                     printFunc20();
                 }, 500);
-                window.scrollTo(0, 0);
+               
             }
              
-        }, 35);
+        }, 45);
     }
     const printFunc20 = () => {
         const elem = document.querySelector('.anim_4_1 .print2');
@@ -694,10 +555,10 @@ function animateFunc() {
                 setTimeout(() => {
                     printFunc21();
                 }, 500);
-                window.scrollTo(0, 0);
+               
             }
              
-        }, 35);
+        }, 45);
     }
     const printFunc21 = () => {
         const elem = document.querySelector('.anim_4_1 .print3');
@@ -723,11 +584,11 @@ function animateFunc() {
                 setTimeout(() => {
                     anim4_2.classList.remove('d-none')
                     printFunc22();
-                }, 1200);
-                window.scrollTo(0, 0);
+                }, 2500);
+               
             }
              
-        }, 35);
+        }, 45);
     }
     const printFunc22 = () => {
         const elem = document.querySelector('.anim_4_2 .print');
@@ -752,10 +613,10 @@ function animateFunc() {
                 setTimeout(() => {
                     printFunc23();
                 }, 500);
-                window.scrollTo(0, 0);
+               
             }
              
-        }, 35);
+        }, 45);
     }
     
     const printFunc23 = () => {
@@ -778,30 +639,9 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-                window.addEventListener('scroll', () => {
-                    const myInfo = document.querySelector('.show-anim_4_2')
-                          anim4 = document.querySelector('.anim-page-4')
-                          anim5 = document.querySelector('.anim-page-5')
-                  
-                  
-                    const positionMyInfo = myInfo.getBoundingClientRect().top;
-                  
-                    const screenPosition = window.innerHeight;
-                  
-                    if(screenPosition > positionMyInfo) {
-                        anim4.classList.add('d-none');
-                        anim5.classList.remove('d-none');
-                        myInfo.classList.remove('show-anim_4_2')
-                        setTimeout(() => {
-                            printFunc24();
-                        }, 500);
-                        window.scrollTo(0, 0);
-                    } 
-                  
-                  })
             }
              
-        }, 35);
+        }, 45);
     }
     
     const printFunc24 = () => {
@@ -832,10 +672,10 @@ function animateFunc() {
                 setTimeout(() => {
                     anim5.classList.remove('d-none')
                     printFunc25()
-                }, 2000);
+                }, 2500);
             }
              
-        }, 35);
+        }, 45);
     }
     
     
@@ -859,29 +699,205 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-                window.addEventListener('scroll', () => {
-                    const myInfo = document.querySelector('.show-anim_5');
-                          main = document.querySelector('.main');
-                          page = document.querySelector('.page');
-                  
-                  
-                    const positionMyInfo = myInfo.getBoundingClientRect().top;
-                  
-                    const screenPosition = window.innerHeight;
-                  
-                    if(screenPosition > positionMyInfo) {
-                        myInfo.classList.remove('show-anim_5')
-                        page.classList.remove('d-none')
-                        main.classList.add('d-none')
-                        window.scrollTo(0, 0);
-                        location.reload();
-                        window.scrollTo(0, 0);
-                    } 
-                  
-                  })
-                
             }
              
-        }, 35);
+        }, 45);
     }
-}
+
+    window.addEventListener('scroll', () => {
+        const point1 = document.querySelector('.show-anim_1'),
+              page1 = document.querySelector('.anim-page-1'),
+              page2 = document.querySelector('.anim-page-2')
+              
+      
+        const positionPoint1 = point1.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight;
+        if(screenPosition > positionPoint1) {
+            page1.classList.add('animPage')
+            page2.classList.remove('d-none');
+            point1.classList.remove('show-anim_1')
+            printFunc3();
+            handle.classList.add('d-none')
+        } 
+      
+      })
+
+      window.addEventListener('scroll', () => {
+        const point2 = document.querySelector('.show-anim_2'),
+              anim2 = document.querySelector('.anim_2'),
+              anim2_1 = document.querySelector('.anim_2_1')
+              
+        const positionPoint2 = point2.getBoundingClientRect().top
+        const screenPosition = window.innerHeight;
+      
+        if(screenPosition > positionPoint2) {
+            anim2.classList.add('animPage');
+            anim2_1.classList.remove('d-none')
+            point2.classList.remove('show-anim_2');
+            printFunc5();   
+            handle.classList.add('d-none')   
+        }
+      })
+
+      window.addEventListener('scroll', () => {
+        const page2 = document.querySelector('.anim-page-2'),
+              point2_1 = document.querySelector('.show-anim_2_1'),
+              page3 = document.querySelector('.anim-page-3');
+        const positionPoint2_1 = point2_1.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight;
+        if(screenPosition > positionPoint2_1) {
+            page2.classList.add('animPage');
+            page3.classList.remove('d-none')
+            point2_1.classList.remove('show-anim_2_1');
+            printFunc8();  
+            
+            handle.classList.add('d-none')
+        }
+      });
+
+      window.addEventListener('scroll', () => {
+        const point3 = document.querySelector('.show-anim_3'),
+              anim3 = document.querySelector('.anim_3'),
+              anim3_1 = document.querySelector('.anim_3_1');
+      
+      
+        const positionPoint3 = point3.getBoundingClientRect().top;
+      
+        const screenPosition = window.innerHeight;
+      
+        if(screenPosition > positionPoint3) {
+            anim3.classList.add('animPage');
+            anim3_1.classList.remove('d-none');
+            point3.classList.remove('show-anim_3');
+            printFunc10();
+            handle.classList.add('d-none')
+        } 
+      });
+
+      window.addEventListener('scroll', () => {
+        const myInfo = document.querySelector('.show-anim_3_1')
+              anim3_1 = document.querySelector('.anim_3_1')
+              anim3_2 = document.querySelector('.anim_3_2')
+      
+      
+        const positionMyInfo = myInfo.getBoundingClientRect().top;
+      
+        const screenPosition = window.innerHeight;
+      
+        if(screenPosition > positionMyInfo) {
+            anim3_1.classList.add('animPage');
+            anim3_2.classList.remove('d-none');
+            myInfo.classList.remove('show-anim_3_1')
+            printFunc12();
+        } 
+      
+      });
+      
+      window.addEventListener('scroll', () => {
+        const myInfo = document.querySelector('.show-anim_3_2')
+              anim3_2 = document.querySelector('.anim_3_2')
+              anim3_3 = document.querySelector('.anim_3_3')
+      
+      
+        const positionMyInfo = myInfo.getBoundingClientRect().top;
+      
+        const screenPosition = window.innerHeight;
+      
+        if(screenPosition > positionMyInfo) {
+            anim3_2.classList.add('animPage');
+            anim3_3.classList.remove('d-none');
+            myInfo.classList.remove('show-anim_3_2')
+            printFunc14();
+        } 
+      
+      });
+
+      
+      window.addEventListener('scroll', () => {
+        const myInfo = document.querySelector('.show-anim_3_4')
+              anim3 = document.querySelector('.anim-page-3')
+              anim4 = document.querySelector('.anim-page-4')
+      
+      
+        const positionMyInfo = myInfo.getBoundingClientRect().top;
+      
+        const screenPosition = window.innerHeight;
+      
+        if(screenPosition > positionMyInfo) {
+            anim3.classList.add('animPage');
+            anim4.classList.remove('d-none');
+            myInfo.classList.remove('show-anim_3_4')
+            setTimeout(() => {
+                printFunc18();
+            }, 500);
+           
+        } 
+      
+      });
+
+      
+      window.addEventListener('scroll', () => {
+        const myInfo = document.querySelector('.show-anim_4')
+              anim4 = document.querySelector('.anim_4')
+              anim4_1 = document.querySelector('.anim_4_1')
+      
+      
+        const positionMyInfo = myInfo.getBoundingClientRect().top;
+      
+        const screenPosition = window.innerHeight;
+      
+        if(screenPosition > positionMyInfo) {
+            anim4.classList.add('animPage');
+            anim4_1.classList.remove('d-none');
+            myInfo.classList.remove('show-anim_4')
+            setTimeout(() => {
+                printFunc19();
+            }, 500);
+           
+        } 
+      
+      });
+      
+      window.addEventListener('scroll', () => {
+        const myInfo = document.querySelector('.show-anim_4_2')
+              anim4 = document.querySelector('.anim-page-4')
+              anim5 = document.querySelector('.anim-page-5')
+      
+      
+        const positionMyInfo = myInfo.getBoundingClientRect().top;
+      
+        const screenPosition = window.innerHeight;
+      
+        if(screenPosition > positionMyInfo) {
+            anim4.classList.add('animPage');
+            anim5.classList.remove('d-none');
+            myInfo.classList.remove('show-anim_4_2')
+            setTimeout(() => {
+                printFunc24();
+            }, 500);
+           
+        } 
+      
+      });
+      
+      window.addEventListener('scroll', () => {
+        const myInfo = document.querySelector('.show-anim_5');
+              main = document.querySelector('.main');
+              page = document.querySelector('.page');
+      
+      
+        const positionMyInfo = myInfo.getBoundingClientRect().top;
+      
+        const screenPosition = window.innerHeight;
+      
+        if(screenPosition > positionMyInfo) {
+            myInfo.classList.remove('show-anim_5')
+            page.classList.remove('d-none')
+            main.classList.add('d-none')
+           
+            location.reload();
+           window.screenTop(0,0)
+        } 
+      
+      })
+    }

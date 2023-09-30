@@ -904,6 +904,15 @@ body {
 
 .main {
   // overflow: hidden;
+  section {
+    width: 100%;
+    height: 100vh;
+    .show-anim {
+      width: 20px;
+      height: 20px;
+      background: #000;
+    }
+  }
   .animate {
     background-image: url(../img/png/anim-bg.png);
     position: relative;
@@ -914,54 +923,51 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 999;
-    margin-bottom: 25px;
-    .anim__title {
-      font-size: 36px;
-      line-height: 43px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
+    margin-bottom: 150px;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    animation: showAnim .5s linear;
+    .handle {
       position: absolute;
-      top: 50px;
-      left: 40px;
+      bottom: 10%;
+      right: 2%;
+      animation: handleAnim 1s linear  infinite;
     }
     &-box {
       max-width: 1260px;
-      min-height: 966px;
       display: flex;
       align-items: center;
       justify-content: center;
       background: transparent;
-      .anim {
-        width: 100%;
-        transform-origin: 0 50%;
+      .anim__img {
+        max-width: 1260px;
+        height: 100vh;
+        object-fit: contain;
       }
       .print {
         position: absolute;
-        top: 70px;
-        left: 18%;
-        width: 380px;
-        height: 233px;
+        top: 40px;
+        width: 280px;
+        height: auto;
         background-image: url(../img/png/text1.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        padding: 20px 45px;
-        font-size: 20px;
-        line-height: 24px;
+        padding: 15px 25px;
+        font-size: 15px;
+        line-height: 18px;
         font-family: 'Inter', sans-serif;
         font-weight: 400;
         animation: animTop .6s ease-in;
-      }
-    }
-    .anim-page-2 {
-      .anim {
-        margin-top: -25px;
+        text-indent: 20px;
       }
     }
     .anim_1 {
-      .anim__title {
-        top: 15px;
-        left: 25px;
+      .print {
+        left: 18%;
+        height: 160px;
       }
+
     }
     .anim_3 {
       .anim__title {
@@ -983,39 +989,38 @@ body {
 
       .print {
         background-image: url(../img/png/text_4_n.png);
-        font-size: 18px;
-        line-height: 22px;
-        width: 487px;
-        height: 300px;
+        font-size: 15px;
+        line-height: 18px;
+        width: 400px;
+        height: 220px;
         top: -60%;
-        left: -10%;
-        padding: 50px;
+        left: 5%;
+        padding: 28px 40px;
       }
-    }
-    .show-anim {
-      position: absolute;
-      top: 110%;
-      right: 0;
-      width: 20px;
-      height: 20px;
-      background: transparent;
+      img {
+        width: 80%;
+        object-fit: contain;
+      }
     }
     .buttons {
       display: flex;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 5px;
+      bottom: 0px;
       z-index: 2;
       .btn {
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
         border-radius: 50px;
         background: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 10px;
+        svg {
+          height: 30px;
+        }
         &:last-child {
           margin-right: 0;
         }
@@ -1028,49 +1033,43 @@ body {
       }
     }
 
-    .anim-page-2 {
-      .buttons {
-        bottom: 35px;
-      }
-    }
-
     // Animate page 2
     .anim_2,
     .anim_2_1 {
       .print{
-        width: 570px;
-        height: 200px;
-        left: 30%;
+        width: 350px;
+        height: 160px;
         background-image: url(../img/png/text2.png);
+        right: 25%;
       }
       .print2 {
         background-image: none;
         background-color: #fff;
-        width: 407px;
-        height: 100px;
+        width: 250px;
+        height: auto;
         border-radius: 60px;
         top: 50%;
         left: 25%;
-        padding: 13px 30px;
+        padding: 10px 20px;
         &::before {
           content: '';
           position: absolute;
-          width: 35px;
-          height: 35px;
+          width: 25px;
+          height: 25px;
           border-radius: 50%;
           background: #fff;
-          top: 100%;
+          top: 90%;
           right: 100%;
           animation: animTop .6s ease-in;
         }
         &::after {
           content: '';
           position: absolute;
-          width: 20px;
-          height: 20px;
+          width: 15px;
+          height: 15px;
           border-radius: 50%;
           background: #fff;
-          top: 150%;
+          top: 130%;
           right: 115%;
           animation: animTop .6s ease-in;
         }
@@ -1078,16 +1077,18 @@ body {
     }
     .anim_2_1 {
       .print {
-        height: 92px;
-        top: 15%;
+        width: 300px;
+        height: 90px;
+        top: 10%;
+        right: 25%;
         background-image: url(../img/png/text2_1.png);
       }
       .print2 {
-        width: 275px;
-        height: 85px;
+        width: 240px;
+        height: 60px;
         top: 28%;
         left: 22%;
-        padding: 25px;
+        padding: 20px;
       }
     }
     .anim_2_2 {
@@ -1102,19 +1103,21 @@ body {
       padding: 40px;
       z-index: 3;
       img {
-        margin: 0 0 50px 100px;
+        width: 70%;
+        object-fit: contain;
+        margin: 0 0 30px 70px;
       }
       .print {
         background-image: url(../img/png/text2_3.png);
         background-size: 100% 100%;
         border-radius: 80px;
-        font-size: 18px;
-        line-height: 22px;
-        width: 450px;
-        height: 280px;
-        top: -40%;
-        left: 55%;
-        padding: 50px;
+        font-size: 15px;
+        line-height: 18px;
+        width: 350px;
+        height: 240px;
+        top: -35%;
+        left: 40%;
+        padding: 35px 40px;
       }
     }
     .anim_3,
@@ -1122,57 +1125,79 @@ body {
     .anim_3_2,
     .anim_3_3 {
       .print {
-        width: 380px;
-        left: 67%;
+        width: 260px;
+        height: 160px;
+        right: 3%;
       }
       .print2 {
         background-image: none;
         background-color: #fff;
-        width: 354px;
-        height: 115px;
+        font-size: 14px;
+        line-height: 16px;
+        width: 260px;
+        height: 80px;
         border-radius: 60px;
         top: 20%;
-        left: 15%;
-        padding: 20px 30px;
+        left: 10%;
+        padding: 15px 20px;
         &::before {
           content: '';
           position: absolute;
-          width: 35px;
-          height: 35px;
+          width: 25px;
+          height: 25px;
           border-radius: 50%;
           background: #fff;
-          top: 110%;
-          left: 10%;
+          top: 108%;
+          left: 13%;
           animation: animTop .6s ease-in;
         }
         &::after {
           content: '';
           position: absolute;
-          width: 20px;
-          height: 20px;
+          width: 15px;
+          height: 15px;
           border-radius: 50%;
           background: #fff;
           top: 150%;
-          left: 15%;
+          left: 23%;
           animation: animTop .6s ease-in;
+        }
+      }
+    }
+    .anim_3_1 {
+      .print {
+        height: 100px;
+      }
+      .print2 {
+        height: 80px;
+        &::before {
+          top: 108%;
+          left: 40%;
+        }
+        &::after {
+          top: 150%;
+          left: 30%;
         }
       }
     }
     .anim_3_2 {
       .print {
         background-image: url(../img/png/text2.png);
-        left: 45%;
-        height: 140px;
+        top: 10%;
+        right: 23%;
+        height: 90px;
+        padding: 15px;
       }
       .print2 {
-        top: 33%;
-        left: 23%;
-        height: 109px;
+        top: 35%;
+        left: 25%;
+        height: 60px;
         width: 200px;
-        padding: 35px 16px;
+        padding: 20px 16px;
+        height: 70px;
         &::before {
-          top: 95%;
-          left: -5%;
+          top: 85%;
+          left: -10%;
         }
         &::after {
           top: 120%;
@@ -1182,15 +1207,18 @@ body {
     }
     .anim_3_3 {
       .print {
-        width: 270px;
-        height: 100px;
+        width: 190px;
+        height: 65px;
         background-image: url(../img/png/text2_1.png);
-        left: 55%;
-        top: 15%;
+        right: 25%;
+        top: 18%;
       }
       .print2 {
+        width: 210px;
+        height: 70px;
         left: 8%;
         top: 20%;
+        padding: 10px 20px;
       }        
     }
     .anim_3_4 {
@@ -1205,67 +1233,70 @@ body {
       padding: 40px;
       z-index: 3;
       img {
-        margin: 0 0 50px 100px;
+        width: 70%;
+        object-fit: contain;
+        margin: 0 0 30px 70px;
       }
+      
       .print {
         background-image: url(../img/png/text2_3.png);
         background-size: 100% 100%;
         border-radius: 80px;
-        font-size: 16px;
-        line-height: 20px;
-        width: 400px;
+        font-size: 15px;
+        line-height: 18px;
+        width: 340px;
         height: 180px;
-        top: -20%;
-        left: 70%;
+        top: -30%;
+        left: 55%;
         padding: 25px 30px 25px 45px;
       }
       .print2 {
         background-image: url(../img/png/tex3.png);
         background-size: 100% 100%;
-        font-size: 16px;
-        line-height: 20px;
-        width: 400px;
-        height: 180px;
-        top: -60%;
-        left: 35%;
-        padding: 25px 40px;
+        font-size: 15px;
+        line-height: 18px;
+        width: 350px;
+        height: 150px;
+        top: -75%;
+        left: 25%;
+        padding: 15px 40px;
       }
     }
   }
 
   .anim_4 {
     .print {
-      width: 400px;
-      height: 120px;
-      left: 38%;
-      top: 10%;
+      width: 280px;
+      height: 80px;
+      right: 30%;
+      top: 13%;
       background-image: url(../img/png/text2_1.png);
     }
   }
   .anim_4_1 {
     .print {
-      width: 280px;
-      height: 100px;
+      width: 200px;
+      height: 80px;
       top: 10%;
       background-image: url(../img/png/text_4.png);
       padding: 15px;
       left: 23%;
     }
     .print2 {
-      width: 260px;
-      height: 120px;
+      width: 200px;
+      height: 90px;
       left: 55%;
       top: 8%;
       background-image: url(../img/png/text_4_2.png);
-      padding: 20px;
+      padding: 15px;
     }
     .print3 {
-      width: 380px;
-      height: 130px;
+      width: 320px;
+      height: 85px;
       left: 38%;
       top: 60%;
       background-image: url(../img/png/text_4_3.png);
-      padding: 20px 20px 20px 40px;
+      padding: 15px 15px 15px 40px;
     }
   }
   .anim_4_2 {
@@ -1280,50 +1311,53 @@ body {
     padding: 40px;
     padding-bottom: 100px;
     z-index: 3;
-
+    img {
+      width: 70%;
+      object-fit: contain;
+    }
     .print {
       background-image: url(../img/png/text_4_n.png);
-      font-size: 18px;
-      line-height: 22px;
-      width: 487px;
-      height: 200px;
-      top: -20%;
-      left: -10%;
-      padding: 50px;
+      font-size: 15px;
+      line-height: 18px;
+      width: 320px;
+      height: 150px;
+      top: -25%;
+      right: 33%;
+      padding: 20px 30px;
     }
     .print2 {
       background-image: url(../img/png/text_4_1_n.png);
-      font-size: 16px;
-      line-height: 20px;
-      width: 400px;
-      height: 220px;
-      top: -70%;
-      left: 25%;
-      padding: 30px 50px;
+      font-size: 14px;
+      line-height: 16px;
+      width: 300px;
+      height: 180px;
+      top: -90%;
+      right: 15%;
+      padding: 20px 30px;
     }
   }
 
   .anim_5 {
     .print {
-      width: 400px;
-      height: 150px;
-      font-size: 18px;
-      line-height: 22px;
+      width: 320px;
+      height: 130px;
+      left: 16%;
+      top: 13%;
     }
     .chat {
       position: absolute;
       top: 40px;
       right: 30px;
-      width: 250px;
-      height: 250px;
+      width: 190px;
+      height: 190px;
       border-radius: 50px;
       border: 1px solid #777676;
       color: #777676;
-      padding: 25px;
+      padding: 15px;
      p {
       font-family: 'Inter', sans-serif;
       font-weight: 400;
-      margin-top: 10px;
+      margin-top: 5px;
       &:first-child {
         margin-top: 0;
       }
@@ -1344,16 +1378,19 @@ body {
     justify-content: start;
     padding: 40px;
     z-index: 3;
-
+    img {
+      width: 70%;
+      object-fit: contain;
+    }
     .print {
       background-image: url(../img/png/text2_3.png);
-      font-size: 18px;
-      line-height: 22px;
-      width: 480px;
-      height: 350px;
-      top: -65%;
-      left: 60%;
-      padding: 50px;
+      font-size: 15px;
+      line-height: 18px;
+      width: 370px;
+      height: 290px;
+      top: -85%;
+      left: 40%;
+      padding: 30px 40px;
     }
   }
 }
@@ -1364,26 +1401,39 @@ body {
     transform: translateY(0);
   }
 }
-.animate-box {
+.animate-box,
+.anim {
   position: relative;
   transition: 1s all;
-  transform-origin: 0 50%;
+  transform-origin: 50% 0;
 }
 .lastPage {
-  transform:    rotateY(-90deg);
+  transform:  rotateX(90deg);
   position: absolute !important;
   z-index: 100;
-}
-.scrollBottom {
-  top: 1000% !important;
-}
-.anim {
   transition: .8s linear;
 }
 .animPage {
-  position: absolute;
-  transform: rotateY(-90deg);
+  position: absolute !important;
+  transform: rotateX(90deg);
   z-index: 100;
+  transition: .8s linear;
 }
+
+@keyframes showAnim {
+  from {
+    top: 100%;
+  } to {
+    top: 0;
+  }
+}
+@keyframes handleAnim {
+  from {
+    transform: translateY(-10px) rotateY(180deg);
+  } to {
+    transform: translateY(10px) rotateY(180deg);
+  }
+}
+
 
   @import './_media'

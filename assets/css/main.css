@@ -1225,6 +1225,17 @@ input, textarea, select, button {
           transform: translateY(-5px);
 }
 
+.main section {
+  width: 100%;
+  height: 100vh;
+}
+
+.main section .show-anim {
+  width: 20px;
+  height: 20px;
+  background: #000;
+}
+
 .main .animate {
   background-image: url(../img/png/anim-bg.png);
   position: relative;
@@ -1244,22 +1255,24 @@ input, textarea, select, button {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 999;
-  margin-bottom: 25px;
+  margin-bottom: 150px;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  -webkit-animation: showAnim .5s linear;
+          animation: showAnim .5s linear;
 }
 
-.main .animate .anim__title {
-  font-size: 36px;
-  line-height: 43px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+.main .animate .handle {
   position: absolute;
-  top: 50px;
-  left: 40px;
+  bottom: 10%;
+  right: 2%;
+  -webkit-animation: handleAnim 1s linear  infinite;
+          animation: handleAnim 1s linear  infinite;
 }
 
 .main .animate-box {
   max-width: 1260px;
-  min-height: 966px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1275,39 +1288,35 @@ input, textarea, select, button {
   background: transparent;
 }
 
-.main .animate-box .anim {
-  width: 100%;
-  -webkit-transform-origin: 0 50%;
-      -ms-transform-origin: 0 50%;
-          transform-origin: 0 50%;
+.main .animate-box .anim__img {
+  max-width: 1260px;
+  height: 100vh;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .main .animate-box .print {
   position: absolute;
-  top: 70px;
-  left: 18%;
-  width: 380px;
-  height: 233px;
+  top: 40px;
+  width: 280px;
+  height: auto;
   background-image: url(../img/png/text1.png);
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
-  padding: 20px 45px;
-  font-size: 20px;
-  line-height: 24px;
+  padding: 15px 25px;
+  font-size: 15px;
+  line-height: 18px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   -webkit-animation: animTop .6s ease-in;
           animation: animTop .6s ease-in;
+  text-indent: 20px;
 }
 
-.main .animate .anim-page-2 .anim {
-  margin-top: -25px;
-}
-
-.main .animate .anim_1 .anim__title {
-  top: 15px;
-  left: 25px;
+.main .animate .anim_1 .print {
+  left: 18%;
+  height: 160px;
 }
 
 .main .animate .anim_3 .anim__title {
@@ -1340,22 +1349,19 @@ input, textarea, select, button {
 
 .main .animate .anim_1_1 .print {
   background-image: url(../img/png/text_4_n.png);
-  font-size: 18px;
-  line-height: 22px;
-  width: 487px;
-  height: 300px;
+  font-size: 15px;
+  line-height: 18px;
+  width: 400px;
+  height: 220px;
   top: -60%;
-  left: -10%;
-  padding: 50px;
+  left: 5%;
+  padding: 28px 40px;
 }
 
-.main .animate .show-anim {
-  position: absolute;
-  top: 110%;
-  right: 0;
-  width: 20px;
-  height: 20px;
-  background: transparent;
+.main .animate .anim_1_1 img {
+  width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .main .animate .buttons {
@@ -1368,13 +1374,13 @@ input, textarea, select, button {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 5px;
+  bottom: 0px;
   z-index: 2;
 }
 
 .main .animate .buttons .btn {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   -webkit-border-radius: 50px;
           border-radius: 50px;
   background: #fff;
@@ -1393,6 +1399,10 @@ input, textarea, select, button {
   margin-right: 10px;
 }
 
+.main .animate .buttons .btn svg {
+  height: 30px;
+}
+
 .main .animate .buttons .btn:last-child {
   margin-right: 0;
 }
@@ -1405,41 +1415,37 @@ input, textarea, select, button {
   stroke: #5D65CD;
 }
 
-.main .animate .anim-page-2 .buttons {
-  bottom: 35px;
-}
-
 .main .animate .anim_2 .print,
 .main .animate .anim_2_1 .print {
-  width: 570px;
-  height: 200px;
-  left: 30%;
+  width: 350px;
+  height: 160px;
   background-image: url(../img/png/text2.png);
+  right: 25%;
 }
 
 .main .animate .anim_2 .print2,
 .main .animate .anim_2_1 .print2 {
   background-image: none;
   background-color: #fff;
-  width: 407px;
-  height: 100px;
+  width: 250px;
+  height: auto;
   -webkit-border-radius: 60px;
           border-radius: 60px;
   top: 50%;
   left: 25%;
-  padding: 13px 30px;
+  padding: 10px 20px;
 }
 
 .main .animate .anim_2 .print2::before,
 .main .animate .anim_2_1 .print2::before {
   content: '';
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background: #fff;
-  top: 100%;
+  top: 90%;
   right: 100%;
   -webkit-animation: animTop .6s ease-in;
           animation: animTop .6s ease-in;
@@ -1449,29 +1455,31 @@ input, textarea, select, button {
 .main .animate .anim_2_1 .print2::after {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background: #fff;
-  top: 150%;
+  top: 130%;
   right: 115%;
   -webkit-animation: animTop .6s ease-in;
           animation: animTop .6s ease-in;
 }
 
 .main .animate .anim_2_1 .print {
-  height: 92px;
-  top: 15%;
+  width: 300px;
+  height: 90px;
+  top: 10%;
+  right: 25%;
   background-image: url(../img/png/text2_1.png);
 }
 
 .main .animate .anim_2_1 .print2 {
-  width: 275px;
-  height: 85px;
+  width: 240px;
+  height: 60px;
   top: 28%;
   left: 22%;
-  padding: 25px;
+  padding: 20px;
 }
 
 .main .animate .anim_2_2 {
@@ -1498,7 +1506,10 @@ input, textarea, select, button {
 }
 
 .main .animate .anim_2_2 img {
-  margin: 0 0 50px 100px;
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 0 30px 70px;
 }
 
 .main .animate .anim_2_2 .print {
@@ -1507,21 +1518,22 @@ input, textarea, select, button {
           background-size: 100% 100%;
   -webkit-border-radius: 80px;
           border-radius: 80px;
-  font-size: 18px;
-  line-height: 22px;
-  width: 450px;
-  height: 280px;
-  top: -40%;
-  left: 55%;
-  padding: 50px;
+  font-size: 15px;
+  line-height: 18px;
+  width: 350px;
+  height: 240px;
+  top: -35%;
+  left: 40%;
+  padding: 35px 40px;
 }
 
 .main .animate .anim_3 .print,
 .main .animate .anim_3_1 .print,
 .main .animate .anim_3_2 .print,
 .main .animate .anim_3_3 .print {
-  width: 380px;
-  left: 67%;
+  width: 260px;
+  height: 160px;
+  right: 3%;
 }
 
 .main .animate .anim_3 .print2,
@@ -1530,13 +1542,15 @@ input, textarea, select, button {
 .main .animate .anim_3_3 .print2 {
   background-image: none;
   background-color: #fff;
-  width: 354px;
-  height: 115px;
+  font-size: 14px;
+  line-height: 16px;
+  width: 260px;
+  height: 80px;
   -webkit-border-radius: 60px;
           border-radius: 60px;
   top: 20%;
-  left: 15%;
-  padding: 20px 30px;
+  left: 10%;
+  padding: 15px 20px;
 }
 
 .main .animate .anim_3 .print2::before,
@@ -1545,13 +1559,13 @@ input, textarea, select, button {
 .main .animate .anim_3_3 .print2::before {
   content: '';
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background: #fff;
-  top: 110%;
-  left: 10%;
+  top: 108%;
+  left: 13%;
   -webkit-animation: animTop .6s ease-in;
           animation: animTop .6s ease-in;
 }
@@ -1562,34 +1576,55 @@ input, textarea, select, button {
 .main .animate .anim_3_3 .print2::after {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background: #fff;
   top: 150%;
-  left: 15%;
+  left: 23%;
   -webkit-animation: animTop .6s ease-in;
           animation: animTop .6s ease-in;
 }
 
+.main .animate .anim_3_1 .print {
+  height: 100px;
+}
+
+.main .animate .anim_3_1 .print2 {
+  height: 80px;
+}
+
+.main .animate .anim_3_1 .print2::before {
+  top: 108%;
+  left: 40%;
+}
+
+.main .animate .anim_3_1 .print2::after {
+  top: 150%;
+  left: 30%;
+}
+
 .main .animate .anim_3_2 .print {
   background-image: url(../img/png/text2.png);
-  left: 45%;
-  height: 140px;
+  top: 10%;
+  right: 23%;
+  height: 90px;
+  padding: 15px;
 }
 
 .main .animate .anim_3_2 .print2 {
-  top: 33%;
-  left: 23%;
-  height: 109px;
+  top: 35%;
+  left: 25%;
+  height: 60px;
   width: 200px;
-  padding: 35px 16px;
+  padding: 20px 16px;
+  height: 70px;
 }
 
 .main .animate .anim_3_2 .print2::before {
-  top: 95%;
-  left: -5%;
+  top: 85%;
+  left: -10%;
 }
 
 .main .animate .anim_3_2 .print2::after {
@@ -1598,16 +1633,19 @@ input, textarea, select, button {
 }
 
 .main .animate .anim_3_3 .print {
-  width: 270px;
-  height: 100px;
+  width: 190px;
+  height: 65px;
   background-image: url(../img/png/text2_1.png);
-  left: 55%;
-  top: 15%;
+  right: 25%;
+  top: 18%;
 }
 
 .main .animate .anim_3_3 .print2 {
+  width: 210px;
+  height: 70px;
   left: 8%;
   top: 20%;
+  padding: 10px 20px;
 }
 
 .main .animate .anim_3_4 {
@@ -1634,7 +1672,10 @@ input, textarea, select, button {
 }
 
 .main .animate .anim_3_4 img {
-  margin: 0 0 50px 100px;
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 0 30px 70px;
 }
 
 .main .animate .anim_3_4 .print {
@@ -1643,12 +1684,12 @@ input, textarea, select, button {
           background-size: 100% 100%;
   -webkit-border-radius: 80px;
           border-radius: 80px;
-  font-size: 16px;
-  line-height: 20px;
-  width: 400px;
+  font-size: 15px;
+  line-height: 18px;
+  width: 340px;
   height: 180px;
-  top: -20%;
-  left: 70%;
+  top: -30%;
+  left: 55%;
   padding: 25px 30px 25px 45px;
 }
 
@@ -1656,26 +1697,26 @@ input, textarea, select, button {
   background-image: url(../img/png/tex3.png);
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
-  font-size: 16px;
-  line-height: 20px;
-  width: 400px;
-  height: 180px;
-  top: -60%;
-  left: 35%;
-  padding: 25px 40px;
+  font-size: 15px;
+  line-height: 18px;
+  width: 350px;
+  height: 150px;
+  top: -75%;
+  left: 25%;
+  padding: 15px 40px;
 }
 
 .main .anim_4 .print {
-  width: 400px;
-  height: 120px;
-  left: 38%;
-  top: 10%;
+  width: 280px;
+  height: 80px;
+  right: 30%;
+  top: 13%;
   background-image: url(../img/png/text2_1.png);
 }
 
 .main .anim_4_1 .print {
-  width: 280px;
-  height: 100px;
+  width: 200px;
+  height: 80px;
   top: 10%;
   background-image: url(../img/png/text_4.png);
   padding: 15px;
@@ -1683,21 +1724,21 @@ input, textarea, select, button {
 }
 
 .main .anim_4_1 .print2 {
-  width: 260px;
-  height: 120px;
+  width: 200px;
+  height: 90px;
   left: 55%;
   top: 8%;
   background-image: url(../img/png/text_4_2.png);
-  padding: 20px;
+  padding: 15px;
 }
 
 .main .anim_4_1 .print3 {
-  width: 380px;
-  height: 130px;
+  width: 320px;
+  height: 85px;
   left: 38%;
   top: 60%;
   background-image: url(../img/png/text_4_3.png);
-  padding: 20px 20px 20px 40px;
+  padding: 15px 15px 15px 40px;
 }
 
 .main .anim_4_2 {
@@ -1724,52 +1765,58 @@ input, textarea, select, button {
   z-index: 3;
 }
 
+.main .anim_4_2 img {
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .main .anim_4_2 .print {
   background-image: url(../img/png/text_4_n.png);
-  font-size: 18px;
-  line-height: 22px;
-  width: 487px;
-  height: 200px;
-  top: -20%;
-  left: -10%;
-  padding: 50px;
+  font-size: 15px;
+  line-height: 18px;
+  width: 320px;
+  height: 150px;
+  top: -25%;
+  right: 33%;
+  padding: 20px 30px;
 }
 
 .main .anim_4_2 .print2 {
   background-image: url(../img/png/text_4_1_n.png);
-  font-size: 16px;
-  line-height: 20px;
-  width: 400px;
-  height: 220px;
-  top: -70%;
-  left: 25%;
-  padding: 30px 50px;
+  font-size: 14px;
+  line-height: 16px;
+  width: 300px;
+  height: 180px;
+  top: -90%;
+  right: 15%;
+  padding: 20px 30px;
 }
 
 .main .anim_5 .print {
-  width: 400px;
-  height: 150px;
-  font-size: 18px;
-  line-height: 22px;
+  width: 320px;
+  height: 130px;
+  left: 16%;
+  top: 13%;
 }
 
 .main .anim_5 .chat {
   position: absolute;
   top: 40px;
   right: 30px;
-  width: 250px;
-  height: 250px;
+  width: 190px;
+  height: 190px;
   -webkit-border-radius: 50px;
           border-radius: 50px;
   border: 1px solid #777676;
   color: #777676;
-  padding: 25px;
+  padding: 15px;
 }
 
 .main .anim_5 .chat p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .main .anim_5 .chat p:first-child {
@@ -1803,15 +1850,21 @@ input, textarea, select, button {
   z-index: 3;
 }
 
+.main .anim_5_1 img {
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .main .anim_5_1 .print {
   background-image: url(../img/png/text2_3.png);
-  font-size: 18px;
-  line-height: 22px;
-  width: 480px;
-  height: 350px;
-  top: -65%;
-  left: 60%;
-  padding: 50px;
+  font-size: 15px;
+  line-height: 18px;
+  width: 370px;
+  height: 290px;
+  top: -85%;
+  left: 40%;
+  padding: 30px 40px;
 }
 
 @-webkit-keyframes animTop {
@@ -1836,38 +1889,75 @@ input, textarea, select, button {
   }
 }
 
-.animate-box {
+.animate-box,
+.anim {
   position: relative;
   -webkit-transition: 1s all;
   -o-transition: 1s all;
   transition: 1s all;
-  -webkit-transform-origin: 0 50%;
-      -ms-transform-origin: 0 50%;
-          transform-origin: 0 50%;
+  -webkit-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+          transform-origin: 50% 0;
 }
 
 .lastPage {
-  -webkit-transform: rotateY(-90deg);
-          transform: rotateY(-90deg);
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
   position: absolute !important;
   z-index: 100;
-}
-
-.scrollBottom {
-  top: 1000% !important;
-}
-
-.anim {
   -webkit-transition: .8s linear;
   -o-transition: .8s linear;
   transition: .8s linear;
 }
 
 .animPage {
-  position: absolute;
-  -webkit-transform: rotateY(-90deg);
-          transform: rotateY(-90deg);
+  position: absolute !important;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
   z-index: 100;
+  -webkit-transition: .8s linear;
+  -o-transition: .8s linear;
+  transition: .8s linear;
+}
+
+@-webkit-keyframes showAnim {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes showAnim {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes handleAnim {
+  from {
+    -webkit-transform: translateY(-10px) rotateY(180deg);
+            transform: translateY(-10px) rotateY(180deg);
+  }
+  to {
+    -webkit-transform: translateY(10px) rotateY(180deg);
+            transform: translateY(10px) rotateY(180deg);
+  }
+}
+
+@keyframes handleAnim {
+  from {
+    -webkit-transform: translateY(-10px) rotateY(180deg);
+            transform: translateY(-10px) rotateY(180deg);
+  }
+  to {
+    -webkit-transform: translateY(10px) rotateY(180deg);
+            transform: translateY(10px) rotateY(180deg);
+  }
 }
 
 @media (max-width: 1400px) {
@@ -2659,5 +2749,687 @@ input, textarea, select, button {
   }
   .contact-form__btn svg {
     width: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main .animate-box .anim__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .animate-box .print {
+    position: absolute;
+    top: 40px;
+    width: 220px;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 14px;
+    text-indent: 10px;
+  }
+  .main .animate-box .print2 {
+    font-size: 12px !important;
+    line-height: 14px !important;
+  }
+  .main .animate .buttons .btn {
+    width: 40px;
+    height: 40px;
+  }
+  .main .animate .buttons .btn svg {
+    min-width: 25px;
+  }
+  .main .animate .anim_1 .print {
+    left: 18%;
+    height: 120px;
+  }
+  .main .animate .anim_1_1 .print {
+    background-image: url(../img/png/text_4_n.png);
+    font-size: 14px;
+    line-height: 15px;
+    width: 350px;
+    height: 200px;
+    top: -60%;
+    left: 0%;
+    padding: 15px 40px;
+  }
+  .main .animate .anim_2 .print,
+  .main .animate .anim_2_1 .print {
+    width: 250px;
+    height: 120px;
+    background-image: url(../img/png/text2.png);
+    right: 25%;
+  }
+  .main .animate .anim_2 .print2,
+  .main .animate .anim_2_1 .print2 {
+    width: 220px;
+    height: 60px;
+  }
+  .main .animate .anim_2_1 .print {
+    width: 250px;
+    height: 60px;
+  }
+  .main .animate .anim_2_1 .print2 {
+    width: 200px;
+    height: 40px;
+    padding: 15px;
+  }
+  .main .animate .anim_2_2 img {
+    margin: 0;
+  }
+  .main .animate .anim_2_2 .print {
+    font-size: 13px;
+    line-height: 15px;
+    width: 300px;
+    height: 180px;
+    padding: 30px;
+    left: 30%;
+    top: -25%;
+  }
+  .main .animate .anim_3 .print,
+  .main .animate .anim_3_1 .print {
+    width: 200px;
+    height: 120px;
+    right: 1%;
+  }
+  .main .animate .anim_3 .print2,
+  .main .animate .anim_3_1 .print2 {
+    height: 70px;
+    padding: 5px 15px;
+  }
+  .main .animate .anim_3_1 .print {
+    height: 80px;
+  }
+  .main .animate .anim_3_1 .print2 {
+    height: 60px;
+  }
+  .main .animate .anim_3_2 .print {
+    width: 220px;
+    height: 70px;
+  }
+  .main .animate .anim_3_2 .print2 {
+    width: 150px;
+    height: 50px;
+  }
+  .main .animate .anim_3_4 .print {
+    width: 250px;
+    height: 140px;
+    padding: 20px 30px;
+    left: 45%;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .main .animate .anim_3_4 .print2 {
+    width: 250px;
+    height: 140px;
+    left: 15%;
+  }
+  .main .animate .anim_3_4 img {
+    margin: 0;
+  }
+  .main .animate .anim_4 .print {
+    height: 50px;
+  }
+  .main .animate .anim_4_1 .print {
+    width: 170px;
+    height: 50px;
+    padding: 5px;
+    left: 18%;
+  }
+  .main .animate .anim_4_1 .print2 {
+    width: 170px;
+    height: 50px;
+    padding: 5px;
+    left: 55%;
+  }
+  .main .animate .anim_4_1 .print3 {
+    width: 250px;
+    height: 70px;
+    padding: 10px 10px 10px 20px;
+    top: 60%;
+    left: 35%;
+  }
+  .main .animate .anim_4_2 {
+    padding-bottom: 20px;
+  }
+  .main .animate .anim_4_2 .print {
+    font-size: 12px;
+    line-height: 14px;
+    width: 250px;
+    height: 120px;
+    top: -25%;
+    right: 33%;
+    padding: 15px 20px;
+  }
+  .main .animate .anim_4_2 .print2 {
+    width: 250px;
+    height: 150px;
+    top: -90%;
+    right: 15%;
+    padding: 15px 20px;
+  }
+  .main .animate .anim_5 .print {
+    width: 235px;
+    height: 100px;
+    left: 16%;
+    top: 13%;
+  }
+  .main .animate .anim_5 .chat {
+    right: 20px;
+    width: 140px;
+    height: 120px;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    padding: 10px;
+  }
+  .main .animate .anim_5 .chat p {
+    font-size: 12px;
+    margin-top: 0;
+  }
+  .main .animate .anim_5 .chat p:first-child {
+    margin-top: 0;
+  }
+  .main .animate .anim_5 .chat p span {
+    margin-right: 15px;
+  }
+  .main .animate .anim_5_1 {
+    padding: 20px;
+  }
+  .main .animate .anim_5_1 .print {
+    font-size: 12px;
+    line-height: 14px;
+    width: 320px;
+    height: 200px;
+    top: -60%;
+    left: 40%;
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main .animate-box .print {
+    width: 170px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .main .animate-box .print2 {
+    font-size: 10px !important;
+    line-height: 12px !important;
+  }
+  .main .animate .buttons .btn {
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+  }
+  .main .animate .buttons .btn svg {
+    min-width: 20px;
+    height: 20px;
+  }
+  .main .animate .anim_1 .print {
+    left: 18%;
+    height: 120px;
+  }
+  .main .animate .anim_1_1 .print {
+    font-size: 10px;
+    line-height: 12px;
+    width: 250px;
+    height: 170px;
+    top: -70%;
+    left: 0%;
+    padding: 15px 30px;
+  }
+  .main .animate .anim_2 .print,
+  .main .animate .anim_2_1 .print {
+    width: 210px;
+    height: 110px;
+  }
+  .main .animate .anim_2 .print2,
+  .main .animate .anim_2_1 .print2 {
+    width: 180px;
+    height: 60px;
+    left: 20%;
+  }
+  .main .animate .anim_2 .print2::before,
+  .main .animate .anim_2_1 .print2::before {
+    width: 15px;
+    height: 15px;
+    top: 100%;
+    left: 0%;
+  }
+  .main .animate .anim_2 .print2::after,
+  .main .animate .anim_2_1 .print2::after {
+    width: 10px;
+    height: 10px;
+    left: -5%;
+  }
+  .main .animate .anim_2_1 .print {
+    width: 200px;
+    height: 60px;
+  }
+  .main .animate .anim_2_1 .print2 {
+    width: 180px;
+    height: 40px;
+    padding: 15px;
+  }
+  .main .animate .anim_2_2 .print {
+    font-size: 10px;
+    line-height: 12px;
+    width: 250px;
+    height: 130px;
+    padding: 20px;
+    left: 30%;
+    top: -25%;
+  }
+  .main .animate .anim_3 .print,
+  .main .animate .anim_3_1 .print {
+    width: 160px;
+    height: 120px;
+    right: 1%;
+    top: 5%;
+  }
+  .main .animate .anim_3 .print2,
+  .main .animate .anim_3_1 .print2 {
+    height: 60px;
+    padding: 5px 15px;
+    top: 18%;
+  }
+  .main .animate .anim_3 .print2::before,
+  .main .animate .anim_3_1 .print2::before {
+    width: 15px;
+    height: 15px;
+  }
+  .main .animate .anim_3 .print2::after,
+  .main .animate .anim_3_1 .print2::after {
+    width: 10px;
+    height: 10px;
+    top: 130%;
+  }
+  .main .animate .anim_3_1 .print {
+    height: 80px;
+  }
+  .main .animate .anim_3_1 .print2 {
+    height: 60px;
+  }
+  .main .animate .anim_3_2 .print {
+    width: 180px;
+    height: 65px;
+  }
+  .main .animate .anim_3_2 .print2 {
+    width: 130px;
+    height: 50px;
+  }
+  .main .animate .anim_3_2 .print2::before {
+    width: 15px;
+    height: 15px;
+  }
+  .main .animate .anim_3_2 .print2::after {
+    width: 10px;
+    height: 10px;
+  }
+  .main .animate .anim_3_3 .print {
+    width: 120px;
+    height: 40px;
+  }
+  .main .animate .anim_3_3 .print2 {
+    width: 160px;
+    height: 50px;
+  }
+  .main .animate .anim_3_3 .print2::before {
+    width: 15px;
+    height: 15px;
+  }
+  .main .animate .anim_3_3 .print2::after {
+    width: 10px;
+    height: 10px;
+  }
+  .main .animate .anim_3_4 .print {
+    width: 220px;
+    height: 130px;
+    padding: 20px 25px;
+    left: 45%;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .main .animate .anim_3_4 .print2 {
+    width: 250px;
+    height: 110px;
+    left: 15%;
+  }
+  .main .animate .anim_3_4 img {
+    margin: 0;
+  }
+  .main .animate .anim_4 .print {
+    height: 60px;
+  }
+  .main .animate .anim_4_1 .print {
+    width: 150px;
+    height: 60px;
+    padding: 5px;
+    left: 18%;
+  }
+  .main .animate .anim_4_1 .print2 {
+    width: 150px;
+    height: 60px;
+    padding: 5px;
+    left: 55%;
+  }
+  .main .animate .anim_4_1 .print3 {
+    width: 250px;
+    height: 70px;
+    padding: 10px 10px 10px 20px;
+    top: 60%;
+    left: 35%;
+  }
+  .main .animate .anim_4_2 {
+    padding-bottom: 20px;
+  }
+  .main .animate .anim_4_2 .print {
+    font-size: 10px;
+    line-height: 12px;
+    width: 250px;
+    height: 100px;
+    top: -25%;
+    right: 33%;
+    padding: 15px 20px;
+  }
+  .main .animate .anim_4_2 .print2 {
+    width: 250px;
+    height: 120px;
+    top: -100%;
+    right: 15%;
+    padding: 15px 20px;
+  }
+  .main .animate .anim_5 .print {
+    width: 200px;
+    height: 100px;
+    left: 16%;
+    top: 13%;
+  }
+  .main .animate .anim_5 .chat {
+    right: 20px;
+    width: 120px;
+    height: 100px;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    padding: 10px;
+  }
+  .main .animate .anim_5 .chat p {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 0;
+  }
+  .main .animate .anim_5 .chat p:first-child {
+    margin-top: 0;
+  }
+  .main .animate .anim_5 .chat p span {
+    margin-right: 15px;
+  }
+  .main .animate .anim_5_1 {
+    padding: 20px;
+  }
+  .main .animate .anim_5_1 .print {
+    font-size: 10px;
+    line-height: 12px;
+    width: 260px;
+    height: 200px;
+    top: -60%;
+    left: 40%;
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 476px) {
+  .main .animate-box .print {
+    width: 120px;
+    font-size: 10px;
+    line-height: 12px;
+    font-size: 7px !important;
+    line-height: 8.5px !important;
+  }
+  .main .animate-box .print2 {
+    font-size: 7px !important;
+    line-height: 8.5px !important;
+  }
+  .main .animate .anim_1 .print {
+    left: 18%;
+    top: 5%;
+    height: 90px;
+  }
+  .main .animate .anim_1_1 {
+    padding: 0;
+  }
+  .main .animate .anim_1_1 .print {
+    width: 180px;
+    height: 120px;
+    top: -50%;
+    left: 15%;
+    padding: 15px 20px;
+  }
+  .main .animate .anim_2 .print,
+  .main .animate .anim_2_1 .print {
+    width: 170px;
+    height: 80px;
+    top: 5%;
+  }
+  .main .animate .anim_2 .print2,
+  .main .animate .anim_2_1 .print2 {
+    width: 155px;
+    height: 45px;
+    top: 45%;
+    left: 20%;
+  }
+  .main .animate .anim_2 .print2::before,
+  .main .animate .anim_2_1 .print2::before {
+    width: 15px;
+    height: 15px;
+    top: 100%;
+    left: 0%;
+  }
+  .main .animate .anim_2 .print2::after,
+  .main .animate .anim_2_1 .print2::after {
+    width: 10px;
+    height: 10px;
+    left: -5%;
+  }
+  .main .animate .anim_2_1 .print {
+    width: 150px;
+    height: 40px;
+    top: 10%;
+  }
+  .main .animate .anim_2_1 .print2 {
+    width: 110px;
+    height: 30px;
+    padding: 10px;
+    top: 25%;
+  }
+  .main .animate .anim_2_1 .print2::before {
+    width: 10px;
+    height: 10px;
+  }
+  .main .animate .anim_2_1 .print2::after {
+    width: 5px;
+    height: 5px;
+  }
+  .main .animate .anim_2_2 {
+    padding: 20px;
+  }
+  .main .animate .anim_2_2 img {
+    margin: 0;
+    width: 60%;
+  }
+  .main .animate .anim_2_2 .print {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    left: 30%;
+    top: -25%;
+  }
+  .main .animate .anim_3 .print,
+  .main .animate .anim_3_1 .print {
+    width: 120px;
+    height: 90px;
+    right: 1%;
+    top: 2%;
+  }
+  .main .animate .anim_3 .print2,
+  .main .animate .anim_3_1 .print2 {
+    height: 40px;
+    padding: 5px 10px;
+    top: 18%;
+  }
+  .main .animate .anim_3 .print2::before,
+  .main .animate .anim_3_1 .print2::before {
+    width: 10px;
+    height: 10px;
+  }
+  .main .animate .anim_3 .print2::after,
+  .main .animate .anim_3_1 .print2::after {
+    width: 5px;
+    height: 5px;
+    top: 130%;
+  }
+  .main .animate .anim_3_1 .print {
+    top: 10%;
+    height: 50px;
+  }
+  .main .animate .anim_3_1 .print2 {
+    top: 20%;
+    height: 40px;
+  }
+  .main .animate .anim_3_2 .print {
+    width: 140px;
+    height: 50px;
+    padding: 10px;
+  }
+  .main .animate .anim_3_2 .print2 {
+    width: 100px;
+    height: 30px;
+  }
+  .main .animate .anim_3_2 .print2::before {
+    width: 10px;
+    height: 10px;
+  }
+  .main .animate .anim_3_2 .print2::after {
+    width: 5px;
+    height: 5px;
+  }
+  .main .animate .anim_3_3 .print {
+    width: 100px;
+    height: 40px;
+  }
+  .main .animate .anim_3_3 .print2 {
+    width: 130px;
+    height: 35px;
+    top: 17%;
+  }
+  .main .animate .anim_3_3 .print2::before {
+    width: 10px;
+    height: 10px;
+  }
+  .main .animate .anim_3_3 .print2::after {
+    width: 5px;
+    height: 5px;
+  }
+  .main .animate .anim_3_4 .print {
+    width: 180px;
+    height: 80px;
+    padding: 10px 20px;
+    left: 45%;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .main .animate .anim_3_4 .print2 {
+    width: 180px;
+    height: 70px;
+    left: 15%;
+    padding: 10px 20px;
+  }
+  .main .animate .anim_3_4 img {
+    margin: 0;
+  }
+  .main .animate .anim_4 .print {
+    height: 50px;
+  }
+  .main .animate .anim_4_1 .print {
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    top: 8%;
+    left: 18%;
+  }
+  .main .animate .anim_4_1 .print2 {
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    top: 8%;
+    left: 55%;
+  }
+  .main .animate .anim_4_1 .print3 {
+    width: 160px;
+    height: 45px;
+    padding: 10px 10px 10px 20px;
+    top: 60%;
+    left: 35%;
+  }
+  .main .animate .anim_4_2 {
+    padding-bottom: 10px;
+  }
+  .main .animate .anim_4_2 img {
+    width: 80%;
+    margin-right: -20px;
+  }
+  .main .animate .anim_4_2 .print {
+    width: 170px;
+    height: 80px;
+    top: -25%;
+    right: 33%;
+    padding: 15px 20px;
+  }
+  .main .animate .anim_4_2 .print2 {
+    width: 180px;
+    height: 90px;
+    top: -100%;
+    right: 15%;
+    padding: 15px 20px;
+  }
+  .main .animate .anim_5 .print {
+    width: 140px;
+    height: 70px;
+    left: 18%;
+    top: 13%;
+  }
+  .main .animate .anim_5 .chat {
+    right: 10px;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    padding: 10px;
+  }
+  .main .animate .anim_5 .chat p {
+    font-size: 7px;
+    line-height: 7px;
+    margin-top: 3px;
+  }
+  .main .animate .anim_5 .chat p:first-child {
+    margin-top: 0;
+  }
+  .main .animate .anim_5 .chat p span {
+    margin-right: 15px;
+  }
+  .main .animate .anim_5_1 {
+    padding: 10px;
+  }
+  .main .animate .anim_5_1 img {
+    width: 60%;
+  }
+  .main .animate .anim_5_1 .print {
+    width: 200px;
+    height: 120px;
+    top: -60%;
+    left: 40%;
+    padding: 15px 20px;
   }
 }
