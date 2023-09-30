@@ -903,6 +903,9 @@
 @media (max-width: 900px) {
   .main {
     .animate {
+      .handle {
+        bottom: 10%;
+      }
       &-box {
         .anim__img {
           max-width: 100%;

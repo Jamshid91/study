@@ -180,10 +180,10 @@ function animateFunc() {
                   setTimeout(() => {
                     anim_2_2.classList.remove('d-none');
                     printFunc7();
-                }, 1200);
+                }, 2500);
             }
              
-        }, 70);
+        }, 45);
        
     }
         
@@ -205,7 +205,10 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
-               
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 1000);
+                
             }
              
         }, 45);
@@ -257,6 +260,9 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 2000);
             }
              
         }, 45);
@@ -309,6 +315,9 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 2000);
             }
              
         }, 45);
@@ -334,10 +343,10 @@ function animateFunc() {
                 clearInterval(interval);
                 setTimeout(() => {
                     printFunc13()
-                }, 700);
+                }, 100);
             }
              
-        }, 70);
+        }, 55);
        
     }
     
@@ -345,7 +354,7 @@ function animateFunc() {
         const elem = document.querySelector('.anim_3_2 .print2');
         setTimeout(() => {
             elem.classList.remove('d-none')
-        }, 500);
+        }, 100);
         const text = elem.textContent.replace(/\s+/g, ' ').trim();
     
         let count = 0;
@@ -361,6 +370,9 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 1000);
             }
              
         }, 45);
@@ -474,6 +486,9 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 1000);
             }
              
         }, 45);
@@ -499,6 +514,9 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 1000);
             }
              
         }, 45);
@@ -585,7 +603,6 @@ function animateFunc() {
                     anim4_2.classList.remove('d-none')
                     printFunc22();
                 }, 2500);
-               
             }
              
         }, 45);
@@ -639,6 +656,9 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 1000);
             }
              
         }, 45);
@@ -699,6 +719,9 @@ function animateFunc() {
     
             if(count === text.length) {
                 clearInterval(interval);
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 1000);
             }
              
         }, 45);
@@ -789,6 +812,7 @@ function animateFunc() {
             anim3_2.classList.remove('d-none');
             myInfo.classList.remove('show-anim_3_1')
             printFunc12();
+            handle.classList.add('d-none')   
         } 
       
       });
@@ -808,6 +832,7 @@ function animateFunc() {
             anim3_3.classList.remove('d-none');
             myInfo.classList.remove('show-anim_3_2')
             printFunc14();
+            handle.classList.add('d-none')   
         } 
       
       });
@@ -830,6 +855,7 @@ function animateFunc() {
             setTimeout(() => {
                 printFunc18();
             }, 500);
+            handle.classList.add('d-none')   
            
         } 
       
@@ -853,7 +879,7 @@ function animateFunc() {
             setTimeout(() => {
                 printFunc19();
             }, 500);
-           
+            handle.classList.add('d-none')   
         } 
       
       });
@@ -875,7 +901,7 @@ function animateFunc() {
             setTimeout(() => {
                 printFunc24();
             }, 500);
-           
+            handle.classList.add('d-none')   
         } 
       
       });
