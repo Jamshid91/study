@@ -38,7 +38,7 @@ function animateFunc() {
                 }, 2500);
             }
              
-        }, 45);
+     }, 60);
        
     }
     
@@ -68,13 +68,16 @@ function animateFunc() {
                     handle.classList.remove('d-none')
                 }, 1000);
             }
-        }, 45);
+          }, 60);
        
     }
     
     
     const printFunc3 = () => {
         const elem = document.querySelector('.anim-page-2 .print');
+        setInterval(() => {
+            elem.classList.remove('d-none')
+        }, 500);
         const text = elem.textContent.replace(/\s+/g, ' ').trim();
     
         let count = 0;
@@ -96,8 +99,8 @@ function animateFunc() {
                 }, 500);
             }
              
-        }, 45);
-       
+      }, 60);
+      
     }
 
 
@@ -126,12 +129,15 @@ function animateFunc() {
                 }, 1000);
             }
              
-        }, 45);
+          }, 60);
        
     }
 
     const printFunc5 = () => {
         const elem = document.querySelector('.anim_2_1 .print');
+        setInterval(() => {
+            elem.classList.remove('d-none')
+        }, 500);
         const text = elem.textContent.replace(/\s+/g, ' ').trim();
     
         let count = 0;
@@ -152,8 +158,8 @@ function animateFunc() {
                 }, 500);
             }
              
-        }, 45);
-       
+          }, 60);
+          
     }
     
     const printFunc6 = () => {
@@ -179,17 +185,20 @@ function animateFunc() {
                     const anim_2_2 = document.querySelector('.anim_2_2');
                   setTimeout(() => {
                     anim_2_2.classList.remove('d-none');
-                    printFunc7();
+                    setTimeout(() => {
+                        printFunc7();
+                    }, 500);
                 }, 2500);
             }
              
-        }, 45);
-       
+          }, 60);
     }
         
     const printFunc7 = () => {
         const elem = document.querySelector('.anim_2_2 .print');
-        elem.classList.remove('d-none')
+        setTimeout(() => {
+            elem.classList.remove('d-none')
+        }, 500);
         const text = elem.textContent.replace(/\s+/g, ' ').trim();
     
         let count = 0;
@@ -211,12 +220,15 @@ function animateFunc() {
                 
             }
              
-        }, 45);
-       
+          }, 60);
+          
     }
     
     const printFunc8 = () => {
         const elem = document.querySelector('.anim_3 .print');
+        setTimeout(() => {
+            elem.classList.remove('d-none')
+        }, 500);
         const text = elem.textContent.replace(/\s+/g, ' ').trim();
     
         let count = 0;
@@ -237,7 +249,7 @@ function animateFunc() {
                 }, 500);
             }
              
-        }, 45);
+          }, 60);
        
     }
     const printFunc9 = () => {
@@ -265,12 +277,15 @@ function animateFunc() {
                 }, 2000);
             }
              
-        }, 45);
-       
+         }, 60);
+         
     }
     
     const printFunc10 = () => {
         const elem = document.querySelector('.anim_3_1 .print');
+        setTimeout(() => {
+            elem.classList.remove('d-none')
+        }, 500);
         const text = elem.textContent.replace(/\s+/g, ' ').trim();
     
         let count = 0;
@@ -291,7 +306,7 @@ function animateFunc() {
                 }, 500);
             }
              
-        }, 45);
+          }, 60);
        
     }
     
@@ -320,12 +335,15 @@ function animateFunc() {
                 }, 2000);
             }
              
-        }, 45);
-       
+         }, 60);
+         
     }
     
     const printFunc12 = () => {
         const elem = document.querySelector('.anim_3_2 .print');
+        setTimeout(() => {
+            elem.classList.remove('d-none')
+        }, 500);
         const text = elem.textContent.replace(/\s+/g, ' ').trim();
     
         let count = 0;
@@ -346,7 +364,7 @@ function animateFunc() {
                 }, 100);
             }
              
-        }, 55);
+        }, 60);
        
     }
     
@@ -375,12 +393,15 @@ function animateFunc() {
                 }, 1000);
             }
              
-        }, 45);
-       
+         }, 60);
+         
     }
     
     const printFunc14 = () => {
         const elem = document.querySelector('.anim_3_3 .print');
+        setTimeout(() => {
+            elem.classList.remove('d-none')
+        }, 500);
         const text = elem.textContent.replace(/\s+/g, ' ').trim();
     
         let count = 0;
@@ -401,7 +422,7 @@ function animateFunc() {
                 }, 500);
             }
              
-        }, 45);
+         }, 60);
        
     }
     
@@ -432,8 +453,8 @@ function animateFunc() {
                 }, 2500);
             }
              
-        }, 45);
-       
+         }, 60);
+         
     }
     
     const printFunc16 = () => {
@@ -462,7 +483,7 @@ function animateFunc() {
                 
             }
              
-        }, 45);
+      }, 60);
        
     }
     
@@ -491,7 +512,7 @@ function animateFunc() {
                 }, 1000);
             }
              
-        }, 45);
+     }, 60);
     }
     
     const printFunc18 = () => {
@@ -519,7 +540,8 @@ function animateFunc() {
                 }, 1000);
             }
              
-        }, 45);
+         }, 60);
+         
     }
     
     const printFunc19 = () => {
@@ -548,7 +570,8 @@ function animateFunc() {
                
             }
              
-        }, 45);
+          }, 60);
+           
     }
     const printFunc20 = () => {
         const elem = document.querySelector('.anim_4_1 .print2');
@@ -576,7 +599,7 @@ function animateFunc() {
                
             }
              
-        }, 45);
+        }, 60);
     }
     const printFunc21 = () => {
         const elem = document.querySelector('.anim_4_1 .print3');
@@ -601,11 +624,16 @@ function animateFunc() {
                 const anim4_2 = document.querySelector('.anim_4_2');
                 setTimeout(() => {
                     anim4_2.classList.remove('d-none')
-                    printFunc22();
+                    setTimeout(() => {
+                        printFunc22();
+                    }, 500);
                 }, 2500);
+                setTimeout(() => {
+                    handle.classList.remove('d-none')
+                }, 1000);
             }
              
-        }, 45);
+          }, 60);
     }
     const printFunc22 = () => {
         const elem = document.querySelector('.anim_4_2 .print');
@@ -633,7 +661,8 @@ function animateFunc() {
                
             }
              
-        }, 45);
+         }, 60);
+         
     }
     
     const printFunc23 = () => {
@@ -661,7 +690,7 @@ function animateFunc() {
                 }, 1000);
             }
              
-        }, 45);
+         }, 60);
     }
     
     const printFunc24 = () => {
@@ -691,11 +720,14 @@ function animateFunc() {
                 }, 500);
                 setTimeout(() => {
                     anim5.classList.remove('d-none')
-                    printFunc25()
+                    setTimeout(() => {
+                        printFunc25()
+                    }, 500);
                 }, 2500);
             }
              
-        }, 45);
+          }, 60);
+          
     }
     
     
@@ -724,8 +756,11 @@ function animateFunc() {
                 }, 1000);
             }
              
-        }, 45);
+          }, 60);
+          
     }
+    let sections = document.querySelectorAll('.main section')
+    let [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13] = sections 
 
     window.addEventListener('scroll', () => {
         const point1 = document.querySelector('.show-anim_1'),
@@ -738,8 +773,14 @@ function animateFunc() {
         if(screenPosition > positionPoint1) {
             page1.classList.add('animPage')
             page2.classList.remove('d-none');
-            point1.classList.remove('show-anim_1')
-            printFunc3();
+            point1.classList.remove('show-anim_1');
+            setTimeout(() => {
+                s1.classList.add('d-none')
+            }, 500);
+            setTimeout(() => {
+                printFunc3();
+            }, 500);
+            window.scrollTo(0, 0)
             handle.classList.add('d-none')
         } 
       
@@ -757,7 +798,13 @@ function animateFunc() {
             anim2.classList.add('animPage');
             anim2_1.classList.remove('d-none')
             point2.classList.remove('show-anim_2');
-            printFunc5();   
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                s2.classList.add('d-none')
+            }, 500);
+            setTimeout(() => {
+                printFunc5();  
+            }, 500); 
             handle.classList.add('d-none')   
         }
       })
@@ -770,9 +817,15 @@ function animateFunc() {
         const screenPosition = window.innerHeight;
         if(screenPosition > positionPoint2_1) {
             page2.classList.add('animPage');
-            page3.classList.remove('d-none')
+            page3.classList.remove('d-none');
             point2_1.classList.remove('show-anim_2_1');
-            printFunc8();  
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                s3.classList.add('d-none')
+            }, 500);
+            setTimeout(() => {
+                printFunc8();  
+            }, 500);
             
             handle.classList.add('d-none')
         }
@@ -792,7 +845,14 @@ function animateFunc() {
             anim3.classList.add('animPage');
             anim3_1.classList.remove('d-none');
             point3.classList.remove('show-anim_3');
-            printFunc10();
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                s4.classList.add('d-none')
+            }, 500);
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                printFunc10();
+            }, 500);
             handle.classList.add('d-none')
         } 
       });
@@ -811,7 +871,14 @@ function animateFunc() {
             anim3_1.classList.add('animPage');
             anim3_2.classList.remove('d-none');
             myInfo.classList.remove('show-anim_3_1')
-            printFunc12();
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                s5.classList.add('d-none')
+            }, 500);
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                printFunc12();
+            }, 500);
             handle.classList.add('d-none')   
         } 
       
@@ -831,7 +898,15 @@ function animateFunc() {
             anim3_2.classList.add('animPage');
             anim3_3.classList.remove('d-none');
             myInfo.classList.remove('show-anim_3_2')
-            printFunc14();
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                s6.classList.add('d-none')
+                s7.classList.add('d-none')
+            }, 500);
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                printFunc14();
+            }, 500);
             handle.classList.add('d-none')   
         } 
       
@@ -852,6 +927,11 @@ function animateFunc() {
             anim3.classList.add('animPage');
             anim4.classList.remove('d-none');
             myInfo.classList.remove('show-anim_3_4')
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                s8.classList.add('d-none')
+            }, 500);
+            window.scrollTo(0, 0)
             setTimeout(() => {
                 printFunc18();
             }, 500);
@@ -876,6 +956,12 @@ function animateFunc() {
             anim4.classList.add('animPage');
             anim4_1.classList.remove('d-none');
             myInfo.classList.remove('show-anim_4')
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                s9.classList.add('d-none')
+                s10.classList.add('d-none')
+            }, 500);
+            window.scrollTo(0, 0)
             setTimeout(() => {
                 printFunc19();
             }, 500);
@@ -898,6 +984,11 @@ function animateFunc() {
             anim4.classList.add('animPage');
             anim5.classList.remove('d-none');
             myInfo.classList.remove('show-anim_4_2')
+            window.scrollTo(0, 0)
+            setTimeout(() => {
+                s11.classList.add('d-none')
+            }, 500);
+            window.scrollTo(0, 0)
             setTimeout(() => {
                 printFunc24();
             }, 500);
@@ -918,7 +1009,6 @@ function animateFunc() {
       
         if(screenPosition > positionMyInfo) {
             myInfo.classList.remove('show-anim_5')
-            page.classList.remove('d-none')
             main.classList.add('d-none')
            
             location.reload();
