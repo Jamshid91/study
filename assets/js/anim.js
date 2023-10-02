@@ -25,6 +25,7 @@ function animateFunc() {
         elem.textContent = ''
     
         interval = setInterval(() => {
+            
             newText += text[count];
             elem.textContent = newText
             count++

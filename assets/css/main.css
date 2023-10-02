@@ -1349,6 +1349,9 @@ input, textarea, select, button {
   -webkit-animation: animTop .6s ease-in;
           animation: animTop .6s ease-in;
   text-indent: 20px;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
+  transition: 3s linear;
 }
 
 .main .animate .anim_1 .print {
