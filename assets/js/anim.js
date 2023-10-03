@@ -1011,15 +1011,12 @@ function animateFunc() {
         const screenPosition = window.innerHeight;
       
         if(screenPosition > positionMyInfo) {
-            // myInfo.classList.remove('show-anim_5')
-            // main.classList.add('topAnim')
             anim.classList.add('topAnim')
             page.classList.remove('d-none')
             sections.classList.add('d-none')
             setTimeout(() => {
                 main.classList.add('d-none')
                     location.reload();
-                    // window.screenTop(0,0)
             }, 700);
             
            

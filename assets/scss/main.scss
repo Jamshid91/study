@@ -909,7 +909,6 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  animation: showAnim .5s linear;
 }
 .main {
 position: relative;
@@ -1469,13 +1468,13 @@ position: relative;
   overflow: visible;
 }
 
-// @keyframes showAnim {
-//   from {
-//     opacity: 0;
-//   } to {
-//     opacity: 1;
-//   }
-// }
+@keyframes showAnim {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
 
 
   @import './_media'

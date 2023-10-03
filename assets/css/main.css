@@ -1234,8 +1234,6 @@ input, textarea, select, button {
   position: relative;
   top: 0;
   left: 0;
-  -webkit-animation: showAnim .5s linear;
-          animation: showAnim .5s linear;
 }
 
 .main {
@@ -2003,6 +2001,24 @@ input, textarea, select, button {
   -webkit-transform: rotateX(75deg) translateZ(60vh) scale(0.95);
           transform: rotateX(75deg) translateZ(60vh) scale(0.95);
   overflow: visible;
+}
+
+@-webkit-keyframes showAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1400px) {
