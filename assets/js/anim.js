@@ -4,7 +4,7 @@ const activePage = document.querySelector('.page'),
       handle = document.querySelector('.handle');
 
 showMainBtn.addEventListener('click', () => {
-    activePage.classList.add('d-none');
+    activePage.classList.add('d-none', 'position-fixed');
     mainPage.classList.remove('d-none');
     animateFunc();
 })
@@ -1001,7 +1001,9 @@ function animateFunc() {
       window.addEventListener('scroll', () => {
         const myInfo = document.querySelector('.show-anim_5');
               main = document.querySelector('.main');
+              anim = document.querySelector('.animate');
               page = document.querySelector('.page');
+              sections = document.querySelector('.sections');
       
       
         const positionMyInfo = myInfo.getBoundingClientRect().top;
@@ -1009,12 +1011,19 @@ function animateFunc() {
         const screenPosition = window.innerHeight;
       
         if(screenPosition > positionMyInfo) {
-            myInfo.classList.remove('show-anim_5')
-            main.classList.add('d-none')
+            // myInfo.classList.remove('show-anim_5')
+            // main.classList.add('topAnim')
+            anim.classList.add('topAnim')
+            page.classList.remove('d-none')
+            sections.classList.add('d-none')
+            setTimeout(() => {
+                main.classList.add('d-none')
+                    location.reload();
+                    // window.screenTop(0,0)
+            }, 700);
+            
            
-            location.reload();
-           window.screenTop(0,0)
+        
         } 
-      
       })
     }

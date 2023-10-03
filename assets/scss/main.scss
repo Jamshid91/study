@@ -901,7 +901,7 @@ body {
   }
 }    
 .page {
-  position: absolute;
+  position: relative;
   top: 0;
 }
 
@@ -912,7 +912,7 @@ body {
   animation: showAnim .5s linear;
 }
 .main {
-  // overflow: hidden;
+position: relative;
   
   section {
     display: flex;
@@ -922,7 +922,6 @@ body {
     .show-anim {
       width: 20px;
       height: 20px;
-      background: #000;
     }
   }
   .animate {
@@ -939,6 +938,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100vh;
+    transition: 1s all;
     &-main {
       position: relative;
       top: 0;
@@ -1456,14 +1456,26 @@ body {
   transform: rotateX(75deg) translateZ(60vh) scale(0.95);
   overflow: visible;
 }
-
-@keyframes showAnim {
-  from {
-    opacity: 0;
-  } to {
-    opacity: 1;
-  }
+.topAnim {
+  transition: 1s all;
+  transform-origin: 50% 40%;
+  transform-style: preserve-3d;
+  box-shadow: 0px 16px 100px 1px rgba(34, 60, 80, 0.34);
+  position: absolute !important;
+  transform: rotateX(90deg);
+  z-index: 100;
+  transition: transform 1s ease-in-out;
+  transform: rotateX(75deg) translateZ(60vh) scale(0.95);
+  overflow: visible;
 }
+
+// @keyframes showAnim {
+//   from {
+//     opacity: 0;
+//   } to {
+//     opacity: 1;
+//   }
+// }
 
 
   @import './_media'

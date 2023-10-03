@@ -1135,6 +1135,13 @@
 
 @media (max-width: 576px) {
   .main {
+    section {
+      
+      
+      .show-anim {
+        margin-top: 100px;
+      }
+    }
     .animate {
       &-box {
         .print {
